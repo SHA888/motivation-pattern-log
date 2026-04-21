@@ -29,7 +29,7 @@ Milestones map to SemVer.
 **Block on automation until this milestone passes.**
 
 - [ ] **Hand-write 5 predictions over 5 weeks**
-  - [ ] Week 1: prediction-001
+  - [x] Week 1: prediction-001
   - [ ] Week 2: prediction-002
   - [ ] Week 3: prediction-003
   - [ ] Week 4: prediction-004
