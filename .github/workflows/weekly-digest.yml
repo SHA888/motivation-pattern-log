@@ -1,0 +1,68 @@
+name: weekly-digest
+
+on:
+  schedule:
+    # Mondays 06:00 UTC
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        working-directory: scripts
+        run: uv sync --locked
+
+      - name: Compute ISO week
+        id: week
+        run: |
+          echo "year_week=$(date -u +'%Y-W%V')" >> "$GITHUB_OUTPUT"
+          echo "branch=digest/$(date -u +'%Y-W%V')" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch signals
+        working-directory: scripts
+        run: uv run fetch_signals.py > /tmp/signals.json
+
+      - name: Draft digest
+        working-directory: scripts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          uv run draft_digest.py \
+            --signals /tmp/signals.json \
+            --architecture ../ARCHITECTURE.md \
+            --patterns-dir ../patterns \
+            --output ../signals/${{ steps.week.outputs.year_week }}.md
+
+      - name: Open PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: ${{ steps.week.outputs.branch }}
+          title: "Signal digest ${{ steps.week.outputs.year_week }}"
+          body: |
+            Automated weekly signal digest.
+
+            **Review checklist:**
+            - [ ] Cluster groupings make sense
+            - [ ] No hallucinated sources
+            - [ ] No prediction-writing by the agent (clusters only)
+            - [ ] Discarded clusters are reasonably discarded
+
+            Merge to accept. Edit the digest file directly in this branch
+            if revisions are needed before merge.
+          add-paths: |
+            signals/*.md
+          commit-message: "signals: digest ${{ steps.week.outputs.year_week }}"

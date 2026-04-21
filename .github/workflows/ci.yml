@@ -1,0 +1,39 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+      - working-directory: scripts
+        run: uv sync --locked
+      - working-directory: scripts
+        run: uv run ruff check .
+      - working-directory: scripts
+        run: uv run ruff format --check .
+
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+      - working-directory: scripts
+        run: uv sync --locked
+      - name: Validate prediction schema
+        working-directory: scripts
+        run: uv run validate_predictions.py ../predictions
+      - name: Validate pattern files
+        working-directory: scripts
+        run: uv run validate_patterns.py ../patterns

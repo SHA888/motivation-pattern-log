@@ -1,0 +1,53 @@
+name: monthly-due
+
+on:
+  schedule:
+    # 1st of every month, 06:00 UTC
+    - cron: '0 6 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  due:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        working-directory: scripts
+        run: uv sync --locked
+
+      - name: Compute month
+        id: month
+        run: echo "ym=$(date -u +'%Y-%m')" >> "$GITHUB_OUTPUT"
+
+      - name: Find due predictions
+        id: due
+        working-directory: scripts
+        run: |
+          uv run notify_due.py \
+            --predictions-dir ../predictions \
+            --month ${{ steps.month.outputs.ym }} \
+            > /tmp/due.md
+          {
+            echo "body<<DUE_EOF"
+            cat /tmp/due.md
+            echo "DUE_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Open issue
+        uses: dacbd/create-issue-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: "Predictions due for retrospective scoring — ${{ steps.month.outputs.ym }}"
+          body: ${{ steps.due.outputs.body }}
+          labels: retrospective-due

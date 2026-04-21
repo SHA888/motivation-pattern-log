@@ -1,0 +1,21 @@
+# Python / uv
+__pycache__/
+*.pyc
+.venv/
+.uv-cache/
+
+# Editor
+.vscode/
+.idea/
+.windsurf/
+*.swp
+.DS_Store
+
+# Local-only signal staging
+/tmp/
+*.local.json
+
+# Secrets — should never be committed; here as belt-and-suspenders
+.env
+.env.*
+!.env.example
