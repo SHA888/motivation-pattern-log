@@ -67,6 +67,10 @@ retired.
 Every file in `predictions/` follows this exact schema. Schema changes require
 a major version bump and a retrospective entry.
 
+Filename: `PREDICTION-YYYYMMDD-NNNN.md`, where `YYYYMMDD` is the creation date
+and `NNNN` is a zero-padded sequence number monotonically increasing across
+the entire repository (not reset per day).
+
 ```markdown
 # PREDICTION-YYYYMMDD-NNNN
 

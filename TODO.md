@@ -30,7 +30,7 @@ Milestones map to SemVer.
 
 - [ ] **Hand-write 5 predictions over 5 weeks**
   - [x] Week 1: prediction-001
-  - [ ] Week 2: prediction-002
+  - [x] Week 2: prediction-002
   - [ ] Week 3: prediction-003
   - [ ] Week 4: prediction-004
   - [ ] Week 5: prediction-005
