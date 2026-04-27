@@ -2,6 +2,9 @@
 
 - **Created:** YYYY-MM-DD
 - **Pattern:** <slug of an active pattern from ARCHITECTURE.md §2 / patterns/>
+<!-- valid slugs: status-in-transgressive-subculture | grievance-and-humiliation-reversal |
+     curiosity-past-the-fence | boredom-with-asymmetric-leverage | craft-and-peer-recognition |
+     ideology-faith-nation | coercion-and-desperation -->
 - **Substrate:** <where the attack will land — be specific, e.g. "MCP servers exposed by personal AI assistants" not "AI agents">
 - **Leading indicator observed:** <what was actually seen, with sources or links to signals/ entries>
 - **Predicted window:** <YYYY-Qn through YYYY-Qn>

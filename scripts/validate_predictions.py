@@ -108,6 +108,19 @@ def main() -> None:
         if errs:
             all_errors[f.name] = errs
 
+    # Cross-file: check for duplicate NNNN sequence numbers
+    seq_seen: dict[str, str] = {}  # seq -> first filename
+    for f in files:
+        m = re.match(r"PREDICTION-\d{8}-(\d{4})\.md", f.name)
+        if m:
+            seq = m.group(1)
+            if seq in seq_seen:
+                all_errors.setdefault(f.name, []).append(
+                    f"Duplicate sequence number {seq} also used by {seq_seen[seq]}"
+                )
+            else:
+                seq_seen[seq] = f.name
+
     if all_errors:
         for filename, errs in all_errors.items():
             for err in errs:
