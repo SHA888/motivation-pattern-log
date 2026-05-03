@@ -31,7 +31,7 @@ Milestones map to SemVer.
 - [ ] **Hand-write 5 predictions over 5 weeks**
   - [x] Week 1: prediction-001
   - [x] Week 2: prediction-002
-  - [ ] Week 3: prediction-003
+  - [x] Week 3: prediction-003
   - [ ] Week 4: prediction-004
   - [ ] Week 5: prediction-005
 - [ ] **Honesty gate**
@@ -78,7 +78,7 @@ Milestones map to SemVer.
 ## Milestone v0.5.0 — Agent-drafted weekly digest
 
 - [ ] **Digest drafter (`scripts/draft_digest.py`)**
-  - [ ] Loads ARCHITECTURE.md and patterns/*.md as context
+  - [ ] Loads ARCHITECTURE.md and patterns/\*.md as context
   - [ ] Loads week's signals from fetch_signals.py
   - [ ] Calls Claude API with system prompt encoding motivation-pattern vocabulary
   - [ ] Produces markdown digest: signals clustered by candidate pattern activation
