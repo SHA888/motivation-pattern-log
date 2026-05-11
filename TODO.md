@@ -32,7 +32,7 @@ Milestones map to SemVer.
   - [x] Week 1: prediction-001
   - [x] Week 2: prediction-002
   - [x] Week 3: prediction-003
-  - [ ] Week 4: prediction-004
+  - [x] Week 4: prediction-004
   - [ ] Week 5: prediction-005
 - [ ] **Honesty gate**
   - [ ] After week 5, decide: does the practice feel valuable enough to automate?
