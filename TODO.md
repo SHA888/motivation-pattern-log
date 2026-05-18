@@ -115,11 +115,13 @@ Milestones map to SemVer.
 ## Milestone v0.7.0 — First automated cycle
 
 - [ ] **Two consecutive weeks of clean automated digests**
-  - [ ] No malformed PRs
-  - [ ] No false-positive pattern activations from agent
-  - [ ] Manual review time per PR < 10 minutes
-- [ ] **One automated monthly due-list**
-- [ ] **Document any v0.5/v0.6 issues in `retrospectives/2026-Qn.md`**
+  - [x] Week 1: PR #2 (2026-W21) opened cleanly after fixing Actions PR permission
+  - [ ] Week 2: awaiting Monday 2026-05-25 cron run
+  - [x] No malformed PRs (week 1)
+  - [x] No false-positive pattern activations from agent (week 1)
+  - [x] Manual review time per PR < 10 minutes (week 1)
+- [x] **One automated monthly due-list** — ran 2026-05-18; no issue opened (nothing due in Q2, correct)
+- [x] **Document any v0.5/v0.6 issues in `retrospectives/2026-Q2.md`**
 
 ---
 
