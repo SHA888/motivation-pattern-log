@@ -54,12 +54,12 @@ Use `patterns/TEMPLATE.md`, `predictions/TEMPLATE.md`, `signals/TEMPLATE.md`, `r
 ## Architecture and content rules
 
 **Content the agent must never write:**
-- Predictions (human-only, monthly)
 - Retrospective scores (human-only, quarterly)
 - Status updates on existing predictions
 
-**Agent-permitted automation (planned for v0.5+):**
-- Weekly signal digests: cluster signals by candidate pattern activation, surface for human review. Explicitly must not write or imply predictions.
+**Agent-permitted automation:**
+- Weekly signal digests: cluster signals by candidate pattern activation, surface for human review.
+- Prediction drafts: agent may draft a prediction from a signal digest; human reviews and commits.
 
 **Framework versioning** (SemVer, in `ARCHITECTURE.md §8`):
 - Patch: prose/link fixes
@@ -68,7 +68,8 @@ Use `patterns/TEMPLATE.md`, `predictions/TEMPLATE.md`, `signals/TEMPLATE.md`, `r
 
 **Immutability rule:** Past prediction files may only receive addenda. Any edit to the prediction body (title, frontmatter, Reasoning, Sources) is a protocol violation.
 
-## Planned scripts (not yet implemented, see TODO.md)
+## Scripts
 
 - `scripts/fetch_signals.py` — fetch and deduplicate signals from curated RSS/Atom sources → JSON to stdout
 - `scripts/draft_digest.py` — call Claude API with ARCHITECTURE.md + patterns context + signals; output a `signals/YYYY-Www.md` digest file
+- `scripts/draft_prediction.py` — call Claude API with digest + framework context; draft one prediction file for human review
