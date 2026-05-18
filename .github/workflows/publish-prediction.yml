@@ -1,0 +1,53 @@
+name: publish-prediction
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'predictions/PREDICTION-*.md'
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # need HEAD^1 to diff against
+
+      - name: Find newly added prediction files
+        id: added
+        run: |
+          files=$(git diff --name-only --diff-filter=A HEAD^1 HEAD -- 'predictions/PREDICTION-*.md')
+          echo "files=$files" >> "$GITHUB_OUTPUT"
+          if [ -z "$files" ]; then
+            echo "No new prediction files in this push."
+          else
+            echo "New predictions: $files"
+          fi
+
+      - name: Install uv
+        if: steps.added.outputs.files != ''
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        if: steps.added.outputs.files != ''
+        working-directory: scripts
+        run: uv sync --locked
+
+      - name: Publish drafts to Dev.to
+        if: steps.added.outputs.files != ''
+        working-directory: scripts
+        env:
+          DEV_TO_API_KEY: ${{ secrets.DEV_TO_API_KEY }}
+        run: |
+          for file in ${{ steps.added.outputs.files }}; do
+            echo "Publishing $file..."
+            url=$(uv run publish_dev.py --file "../$file")
+            echo "Draft created: $url"
+          done
