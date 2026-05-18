@@ -43,20 +43,20 @@ Milestones map to SemVer.
 
 ## Milestone v0.3.0 — Pattern files
 
-- [ ] **One file per seed pattern in `patterns/`**
-  - [ ] patterns/01-status-in-transgressive-subculture.md
-  - [ ] patterns/02-grievance-and-humiliation-reversal.md
-  - [ ] patterns/03-curiosity-past-the-fence.md
-  - [ ] patterns/04-boredom-with-asymmetric-leverage.md
-  - [ ] patterns/05-craft-and-peer-recognition.md
-  - [ ] patterns/06-ideology-faith-nation.md
-  - [ ] patterns/07-coercion-and-desperation.md
-- [ ] **Each pattern documents**
-  - [ ] Operational definition (1 paragraph)
-  - [ ] Three historical instantiations across different eras
-  - [ ] Leading indicators (bulleted, observable)
-  - [ ] Known failure modes
-  - [ ] Cultural variants (note SEA/Indonesian texture where applicable)
+- [x] **One file per seed pattern in `patterns/`**
+  - [x] patterns/01-status-in-transgressive-subculture.md
+  - [x] patterns/02-grievance-and-humiliation-reversal.md
+  - [x] patterns/03-curiosity-past-the-fence.md
+  - [x] patterns/04-boredom-with-asymmetric-leverage.md
+  - [x] patterns/05-craft-and-peer-recognition.md
+  - [x] patterns/06-ideology-faith-nation.md
+  - [x] patterns/07-coercion-and-desperation.md
+- [x] **Each pattern documents**
+  - [x] Operational definition (1 paragraph)
+  - [x] Three historical instantiations across different eras
+  - [x] Leading indicators (bulleted, observable)
+  - [x] Known failure modes
+  - [x] Cultural variants (note SEA/Indonesian texture where applicable)
 
 ---
 
