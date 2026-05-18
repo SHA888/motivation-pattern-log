@@ -1,0 +1,91 @@
+name: draft-prediction
+
+on:
+  workflow_dispatch:
+    inputs:
+      activation:
+        description: 'Activation cluster index from the digest (1 = first listed)'
+        required: false
+        default: '1'
+      digest_file:
+        description: 'Digest filename in signals/ (e.g. 2026-W21.md). Defaults to latest.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        working-directory: scripts
+        run: uv sync --locked
+
+      - name: Draft prediction
+        id: draft
+        working-directory: scripts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          DIGEST_ARG=""
+          if [ -n "${{ github.event.inputs.digest_file }}" ]; then
+            DIGEST_ARG="--digest-file ../signals/${{ github.event.inputs.digest_file }}"
+          fi
+          uv run draft_prediction.py \
+            --activation "${{ github.event.inputs.activation }}" \
+            --out ../predictions/ \
+            $DIGEST_ARG
+
+      - name: Check prediction was written
+        id: check
+        run: |
+          count=$(git status --short predictions/ | grep -c '??' || true)
+          if [ "$count" -gt 0 ]; then
+            echo "has_prediction=true" >> "$GITHUB_OUTPUT"
+            echo "file=$(git status --short predictions/ | grep '??' | awk '{print $2}' | head -1)" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_prediction=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Compute branch name
+        id: branch
+        run: |
+          echo "name=prediction/$(date -u +'%Y%m%d')-draft" >> "$GITHUB_OUTPUT"
+          echo "date=$(date -u +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+
+      - name: Open PR
+        if: steps.check.outputs.has_prediction == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: ${{ steps.branch.outputs.name }}
+          title: "Prediction draft ${{ steps.branch.outputs.date }}"
+          body: |
+            Agent-drafted prediction from the latest signal digest. Review carefully before merging.
+
+            **Review checklist:**
+            - [ ] Pattern slug is correct
+            - [ ] Substrate is specific (not generic)
+            - [ ] Predicted window is reasonable (2–6 quarters out)
+            - [ ] Predicted shape is concrete enough to score later
+            - [ ] Falsifier is a single checkable observable
+            - [ ] Confidence reflects evidence quality honestly
+            - [ ] Reasoning chain is sound and cites the digest signals
+            - [ ] Sources link to real signals from the digest
+            - [ ] Addenda section exists and is empty
+
+            Edit the prediction file directly on this branch before merging.
+            Once merged, the prediction body is frozen — only addenda may be appended.
+          add-paths: |
+            predictions/*.md
+          commit-message: "predictions: agent draft ${{ steps.branch.outputs.date }}"
