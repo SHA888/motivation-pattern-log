@@ -77,38 +77,38 @@ Milestones map to SemVer.
 
 ## Milestone v0.5.0 — Agent-drafted weekly digest
 
-- [ ] **Digest drafter (`scripts/draft_digest.py`)**
-  - [ ] Loads ARCHITECTURE.md and patterns/\*.md as context
-  - [ ] Loads week's signals from fetch_signals.py
-  - [ ] Calls Claude API with system prompt encoding motivation-pattern vocabulary
-  - [ ] Produces markdown digest: signals clustered by candidate pattern activation
-  - [ ] Hard guard: agent must not write predictions, only cluster and surface
-- [ ] **Output format locked in `signals/TEMPLATE.md`**
-- [ ] **Cost ceiling**
-  - [ ] One Claude call per week, max
-  - [ ] Document expected monthly token cost in README
+- [x] **Digest drafter (`scripts/draft_digest.py`)**
+  - [x] Loads ARCHITECTURE.md and patterns/\*.md as context
+  - [x] Loads week's signals from fetch_signals.py
+  - [x] Calls Claude API with system prompt encoding motivation-pattern vocabulary
+  - [x] Produces markdown digest: signals clustered by candidate pattern activation
+  - [x] Hard guard: agent must not write predictions, only cluster and surface
+- [x] **Output format locked in `signals/TEMPLATE.md`**
+- [x] **Cost ceiling**
+  - [x] One Claude call per week, max
+  - [x] Document expected monthly token cost in README
 
 ---
 
 ## Milestone v0.6.0 — GitHub Actions wiring
 
-- [ ] **Weekly workflow (`.github/workflows/weekly-digest.yml`)**
-  - [ ] Trigger: Mon 06:00 UTC + workflow_dispatch
-  - [ ] Steps: checkout, setup-python with uv, fetch signals, draft digest, open PR
-  - [ ] PR title: "Signal digest YYYY-Www"
-  - [ ] PR body: summary stats, patterns flagged
-- [ ] **Monthly workflow (`.github/workflows/monthly-due.yml`)**
-  - [ ] Trigger: 1st of month 06:00 UTC + workflow_dispatch
-  - [ ] Steps: scan predictions/, find any with predicted_window ending this month
-  - [ ] Open issue: "Predictions due for retrospective scoring — YYYY-MM"
-  - [ ] Issue body: checklist with links to each due prediction
-- [ ] **CI workflow (`.github/workflows/ci.yml`)**
-  - [ ] Lint Python with ruff
-  - [ ] Validate prediction frontmatter against schema
-  - [ ] Validate one pattern file per active pattern in framework
-- [ ] **Secrets**
-  - [ ] ANTHROPIC_API_KEY as repo secret
-  - [ ] No other secrets — all sources are public
+- [x] **Weekly workflow (`.github/workflows/weekly-digest.yml`)**
+  - [x] Trigger: Mon 06:00 UTC + workflow_dispatch
+  - [x] Steps: checkout, setup-python with uv, fetch signals, draft digest, open PR
+  - [x] PR title: "Signal digest YYYY-Www"
+  - [x] PR body: summary stats, patterns flagged
+- [x] **Monthly workflow (`.github/workflows/monthly-due.yml`)**
+  - [x] Trigger: 1st of month 06:00 UTC + workflow_dispatch
+  - [x] Steps: scan predictions/, find any with predicted_window ending this month
+  - [x] Open issue: "Predictions due for retrospective scoring — YYYY-MM"
+  - [x] Issue body: checklist with links to each due prediction
+- [x] **CI workflow (`.github/workflows/ci.yml`)**
+  - [x] Lint Python with ruff
+  - [x] Validate prediction frontmatter against schema
+  - [x] Validate one pattern file per active pattern in framework
+- [x] **Secrets**
+  - [x] ANTHROPIC_API_KEY as repo secret
+  - [x] No other secrets — all sources are public
 
 ---
 

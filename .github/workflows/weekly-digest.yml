@@ -29,12 +29,14 @@ jobs:
       - name: Compute ISO week
         id: week
         run: |
-          echo "year_week=$(date -u +'%Y-W%V')" >> "$GITHUB_OUTPUT"
-          echo "branch=digest/$(date -u +'%Y-W%V')" >> "$GITHUB_OUTPUT"
+          echo "year_week=$(date -u +'%G-W%V')" >> "$GITHUB_OUTPUT"
+          echo "branch=digest/$(date -u +'%G-W%V')" >> "$GITHUB_OUTPUT"
 
       - name: Fetch signals
         working-directory: scripts
-        run: uv run fetch_signals.py > /tmp/signals.json
+        run: |
+          uv run fetch_signals.py \
+            > "../signals/${{ steps.week.outputs.year_week }}-raw.json"
 
       - name: Draft digest
         working-directory: scripts
@@ -42,10 +44,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           uv run draft_digest.py \
-            --signals /tmp/signals.json \
-            --architecture ../ARCHITECTURE.md \
-            --patterns-dir ../patterns \
-            --output ../signals/${{ steps.week.outputs.year_week }}.md
+            --signals-file "../signals/${{ steps.week.outputs.year_week }}-raw.json" \
+            > "../signals/${{ steps.week.outputs.year_week }}.md"
 
       - name: Open PR
         uses: peter-evans/create-pull-request@v6
@@ -53,16 +53,18 @@ jobs:
           branch: ${{ steps.week.outputs.branch }}
           title: "Signal digest ${{ steps.week.outputs.year_week }}"
           body: |
-            Automated weekly signal digest.
+            Automated weekly signal digest. Review the digest file before merging.
 
             **Review checklist:**
             - [ ] Cluster groupings make sense
-            - [ ] No hallucinated sources
+            - [ ] No hallucinated sources or fabricated links
             - [ ] No prediction-writing by the agent (clusters only)
+            - [ ] Each activation section has the "not yet a prediction" disclaimer
             - [ ] Discarded clusters are reasonably discarded
 
-            Merge to accept. Edit the digest file directly in this branch
-            if revisions are needed before merge.
+            Edit the digest file directly on this branch if revisions are needed,
+            then merge to accept.
           add-paths: |
+            signals/*.json
             signals/*.md
           commit-message: "signals: digest ${{ steps.week.outputs.year_week }}"

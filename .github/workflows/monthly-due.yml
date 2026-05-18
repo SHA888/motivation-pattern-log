@@ -36,7 +36,7 @@ jobs:
         run: |
           uv run notify_due.py \
             --predictions-dir ../predictions \
-            --month ${{ steps.month.outputs.ym }} \
+            --month "${{ steps.month.outputs.ym }}" \
             > /tmp/due.md
           {
             echo "body<<DUE_EOF"
@@ -44,7 +44,17 @@ jobs:
             echo "DUE_EOF"
           } >> "$GITHUB_OUTPUT"
 
+      - name: Check for due predictions
+        id: check
+        run: |
+          if [ -s /tmp/due.md ]; then
+            echo "has_due=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_due=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Open issue
+        if: steps.check.outputs.has_due == 'true'
         uses: dacbd/create-issue-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

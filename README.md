@@ -56,12 +56,30 @@ This repo is one person's attempt at that practice. It is small on purpose.
 - Predictions, patterns, signals, retrospectives, and all prose: `CC BY 4.0`.
   See `LICENSE-CONTENT`.
 
+## Automation costs
+
+The weekly digest agent (`scripts/draft_digest.py`) makes one Claude API call per week.
+Expected cost at default model (`claude-sonnet-4-6`):
+
+| Item | Tokens | Cost/week |
+|---|---|---|
+| Context (ARCHITECTURE + 7 patterns) | ~12 000 | — |
+| Signals (up to 100 entries) | ~24 000 | — |
+| Output (digest markdown) | ~2 000 | — |
+| **Total per call** | **~38 000** | **~$0.15** |
+| **Monthly (4 calls)** | | **~$0.60** |
+
+Switch to `claude-haiku-4-5` via `ANTHROPIC_MODEL=claude-haiku-4-5` for ~$0.05/month
+at lower output quality. Prompt caching is enabled on the static context; cache hits
+reduce cost on repeated runs within the 5-minute TTL (relevant mainly during testing).
+
 ## Status
 
-Pre-v0. Scaffold only. No predictions written yet.
+v0.5.0. Five predictions open, all 7 pattern files written, weekly signal
+fetcher and digest drafter operational. See `TODO.md` for remaining milestones.
 
 ## Author's note
 
-The first 5 predictions will be written by hand, with no automation, to test
-whether the practice itself is worth automating. If the manual version feels
-empty after 5 weeks, this repo gets archived. Tooling is not a substitute for intention.
+The first 5 predictions were written by hand to test whether the practice itself
+is worth automating. It is. Weekly digests are now agent-drafted and human-merged.
+Tooling is not a substitute for intention, but intention without tooling doesn't scale.
