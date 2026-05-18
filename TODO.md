@@ -33,11 +33,11 @@ Milestones map to SemVer.
   - [x] Week 2: prediction-002
   - [x] Week 3: prediction-003
   - [x] Week 4: prediction-004
-  - [ ] Week 5: prediction-005
-- [ ] **Honesty gate**
-  - [ ] After week 5, decide: does the practice feel valuable enough to automate?
-  - [ ] If no: archive repo, document why in `RETROSPECTIVE-PRE-V1.md`
-  - [ ] If yes: proceed to v0.3.0
+  - [x] Week 5: prediction-005
+- [x] **Honesty gate**
+  - [x] After week 5, decide: does the practice feel valuable enough to automate?
+  - [-] If no: archive repo, document why in `RETROSPECTIVE-PRE-V1.md`
+  - [x] If yes: proceed to v0.3.0
 
 ---
 
