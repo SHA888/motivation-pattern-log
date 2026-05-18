@@ -62,16 +62,16 @@ Milestones map to SemVer.
 
 ## Milestone v0.4.0 — Signal ingestion (serverless)
 
-- [ ] **Curated signal source list**
-  - [ ] Draft `signals/SOURCES.md` with 8 sources max
-  - [ ] Each source: rationale, format (RSS/Atom/scrape), update cadence
-- [ ] **Python signal fetcher (`scripts/fetch_signals.py`)**
-  - [ ] uv-managed, pyproject.toml with feedparser, httpx
-  - [ ] Outputs deduplicated JSON to stdout
-  - [ ] Idempotent: dedup against last week's signals via git history
-- [ ] **Test locally before workflow**
-  - [ ] `uv run scripts/fetch_signals.py` produces sane output
-  - [ ] Manually inspect for noise
+- [x] **Curated signal source list**
+  - [x] Draft `signals/SOURCES.md` with 8 sources max
+  - [x] Each source: rationale, format (RSS/Atom/scrape), update cadence
+- [x] **Python signal fetcher (`scripts/fetch_signals.py`)**
+  - [x] uv-managed, pyproject.toml with feedparser, httpx
+  - [x] Outputs deduplicated JSON to stdout
+  - [x] Idempotent: dedup against last week's signals via git history
+- [x] **Test locally before workflow**
+  - [x] `uv run scripts/fetch_signals.py` produces sane output
+  - [x] Manually inspect for noise
 
 ---
 
