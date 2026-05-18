@@ -81,6 +81,9 @@ No marketing language.}
    High = reserved for strong convergence.
 7. Do NOT score or reference the track record of previous predictions.
 8. The Addenda section must exist but be empty (no content after the header).
+9. In the Sources section, any reference to a local signals/ file MUST use exactly the
+   filename provided in the task prompt (e.g. "signals/2026-W21.md"). Do NOT invent
+   variant filenames such as "signals/2026-W21-digest.md" or "signals/2026-W21-raw.md".
 
 ## VALID PATTERN SLUGS
 
@@ -148,6 +151,29 @@ def parse_activations(digest_text: str) -> list[str]:
     return re.findall(r"^### (.+)$", digest_text, re.MULTILINE)
 
 
+def fix_signal_sources(content: str, digest_filename: str, signals_dir: Path) -> str:
+    """Replace hallucinated signals/ paths with the actual digest filename.
+
+    The model occasionally invents variant names like '2026-W21-digest.md' or
+    '2026-W21-raw.md'. We correct any signals/*.md reference that does not
+    correspond to a real file on disk.
+    """
+    real_files = {f.name for f in signals_dir.glob("*.md") if f.name != "TEMPLATE.md"}
+
+    def replace(m: re.Match) -> str:
+        fname = m.group(1)
+        if fname in real_files:
+            return m.group(0)  # already correct
+        print(
+            f"INFO: corrected hallucinated source path 'signals/{fname}' "
+            f"→ 'signals/{digest_filename}'",
+            file=sys.stderr,
+        )
+        return f"signals/{digest_filename}"
+
+    return re.sub(r"signals/([\w.\-]+\.md)", replace, content)
+
+
 def call_api(
     client: anthropic.Anthropic,
     model: str,
@@ -157,17 +183,27 @@ def call_api(
     activation_hint: str,
     seq: int,
     today: str,
+    digest_filename: str,
+    real_signal_files: list[str],
 ) -> tuple[str, dict]:
+    signal_files_note = (
+        "Real signals/ files you may cite (exact filenames — do not invent others):\n"
+        + "\n".join(f"  signals/{f}" for f in sorted(real_signal_files))
+    )
     user_content = (
         f"Framework context (ARCHITECTURE.md + all pattern files):\n\n{context}\n\n"
         f"---\n\n{existing_preds}\n\n"
         f"---\n\n"
-        f"Signal digest to base the prediction on:\n\n{digest_text}\n\n"
+        f"{signal_files_note}\n\n"
+        f"---\n\n"
+        f"Signal digest to base the prediction on (filename: signals/{digest_filename}):\n\n"
+        f"{digest_text}\n\n"
         f"---\n\n"
         f"Task: Draft one prediction based on the activation cluster: **{activation_hint}**\n\n"
         f"Use filename PREDICTION-{today.replace('-', '')}-{seq:04d}.md "
         f"and Created date {today}.\n"
         f"Sequence number: {seq:04d}.\n"
+        f"When citing the digest in Sources, use exactly: signals/{digest_filename}\n"
         f"Output only the raw markdown file."
     )
     response = client.messages.create(
@@ -263,7 +299,10 @@ def main() -> None:
 
     digest_path = args.digest_file or find_latest_digest(signals_dir)
     digest_text = digest_path.read_text(encoding="utf-8")
-    print(f"INFO: using digest {digest_path.name}", file=sys.stderr)
+    digest_filename = digest_path.name
+    print(f"INFO: using digest {digest_filename}", file=sys.stderr)
+
+    real_signal_files = [f.name for f in signals_dir.glob("*.md") if f.name != "TEMPLATE.md"]
 
     activations = parse_activations(digest_text)
     if not activations:
@@ -296,13 +335,24 @@ def main() -> None:
 
     client = anthropic.Anthropic(api_key=api_key)
     content, usage = call_api(
-        client, args.model, context, digest_text, existing_preds, activation_hint, seq, today
+        client,
+        args.model,
+        context,
+        digest_text,
+        existing_preds,
+        activation_hint,
+        seq,
+        today,
+        digest_filename,
+        real_signal_files,
     )
     log_cost(args.model, usage)
 
     if not content.strip():
         print("ERROR: empty response from API", file=sys.stderr)
         sys.exit(1)
+
+    content = fix_signal_sources(content, digest_filename, signals_dir)
 
     if args.out:
         args.out.mkdir(parents=True, exist_ok=True)
