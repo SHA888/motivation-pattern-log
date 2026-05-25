@@ -45,7 +45,7 @@ jobs:
             DIGEST_ARG="--digest-file ../signals/${{ github.event.inputs.digest_file }}"
           fi
           uv run draft_prediction.py \
-            --activation "${{ github.event.inputs.activation }}" \
+            --activation "${{ github.event.inputs.activation || '1' }}" \
             --out ../predictions/ \
             $DIGEST_ARG
 
