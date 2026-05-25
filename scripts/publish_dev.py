@@ -31,14 +31,14 @@ PATTERN_TAGS = {
     "coercion-and-desperation": "infosec",
 }
 
-PREAMBLE_TEMPLATE = """\
-> **Originally written: {created}** — this article was backdated to match the \
-prediction log. Dev.to does not support custom publication dates; the original \
-date is preserved here for the record.
->
+PREAMBLE = """\
 > From the [motivation-pattern-log](https://github.com/SHA888/motivation-pattern-log) — \
 a public, dated, falsifiable prediction log for AI-era cybersecurity attack patterns \
 grounded in motivation analysis. Predictions are scored quarterly against stated falsifiers.
+>
+> **Framework v1.0.0:** predictions may be drafted, reviewed, and scored by an automated \
+agent under the same schema as the author. The prediction body is frozen at commit; \
+only dated addenda may be appended.
 
 ---
 
@@ -69,7 +69,6 @@ def publish(file: Path, api_key: str, dry_run: bool) -> str:
     pattern = extract_field(text, "Pattern")
     window = extract_field(text, "Predicted window")
     confidence = extract_field(text, "Confidence")
-    created = extract_field(text, "Created")
 
     if not pattern:
         print(f"ERROR: could not extract Pattern from {file.name}", file=sys.stderr)
@@ -77,8 +76,7 @@ def publish(file: Path, api_key: str, dry_run: bool) -> str:
 
     title = build_title(pred_id, pattern, window)
     tags = build_tags(pattern)
-    preamble = PREAMBLE_TEMPLATE.format(created=created or pred_id)
-    body = preamble + text
+    body = PREAMBLE + text
 
     if confidence:
         body += (
