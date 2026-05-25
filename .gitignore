@@ -15,6 +15,10 @@ __pycache__/
 /tmp/
 *.local.json
 
+# Claude Code & harness state
+.claude/
+.harness-mem/state
+
 # Secrets — should never be committed; here as belt-and-suspenders
 .env
 .env.*

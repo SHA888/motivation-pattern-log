@@ -34,6 +34,7 @@ Pre-commit hooks: trailing whitespace, YAML/JSON check, ruff lint+format. Run `p
 ## Content schemas (enforced by validators)
 
 **Prediction files** (`predictions/PREDICTION-YYYYMMDD-NNNN.md`):
+
 - Required frontmatter fields: `Created`, `Pattern`, `Substrate`, `Leading indicator observed`, `Predicted window`, `Predicted shape`, `Falsifier`, `Confidence`, `Status`
 - `Pattern` must be a slug from the 7 valid patterns (see `validate_predictions.py:VALID_PATTERNS`)
 - `Predicted window` format: `YYYY-Qn through YYYY-Qn`
@@ -44,6 +45,7 @@ Pre-commit hooks: trailing whitespace, YAML/JSON check, ruff lint+format. Run `p
 - Sequence number `NNNN` is monotonically increasing across the whole repo, never reset per day.
 
 **Pattern files** (`patterns/NN-<slug>.md`):
+
 - Required frontmatter: `Status`, `Added`, `Last revised`, `Framework version`
 - `Status`: `active | retired | provisional`
 - Required sections: `## Operational definition`, `## Historical instantiations`, `## Leading indicators`, `## Known failure modes`, `## Cultural variants`, `## Disconfirmability test`, `## Predictions deriving from this pattern`
@@ -54,14 +56,17 @@ Use `patterns/TEMPLATE.md`, `predictions/TEMPLATE.md`, `signals/TEMPLATE.md`, `r
 ## Architecture and content rules
 
 **Content the agent must never write:**
+
 - Retrospective scores (human-only, quarterly)
 - Status updates on existing predictions
 
 **Agent-permitted automation:**
+
 - Weekly signal digests: cluster signals by candidate pattern activation, surface for human review.
 - Prediction drafts: agent may draft a prediction from a signal digest; human reviews and commits.
 
 **Framework versioning** (SemVer, in `ARCHITECTURE.md §8`):
+
 - Patch: prose/link fixes
 - Minor: pattern added, retired, or leading-indicator refined
 - Major: schema change, test change, or boundary change
@@ -73,3 +78,5 @@ Use `patterns/TEMPLATE.md`, `predictions/TEMPLATE.md`, `signals/TEMPLATE.md`, `r
 - `scripts/fetch_signals.py` — fetch and deduplicate signals from curated RSS/Atom sources → JSON to stdout
 - `scripts/draft_digest.py` — call Claude API with ARCHITECTURE.md + patterns context + signals; output a `signals/YYYY-Www.md` digest file
 - `scripts/draft_prediction.py` — call Claude API with digest + framework context; draft one prediction file for human review
+
+**Do not include `Co-Authored-By:` trailers in commit messages.** This applies to all assistant-generated commits, including those produced by Claude Code or any other AI tool. Commit attribution stays with the human author. Boilerplate trailers add noise to the history without conveying meaningful authorship and have been retroactively stripped from past commits.
