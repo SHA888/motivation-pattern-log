@@ -35,10 +35,6 @@ PREAMBLE = """\
 > From the [motivation-pattern-log](https://github.com/SHA888/motivation-pattern-log) — \
 a public, dated, falsifiable prediction log for AI-era cybersecurity attack patterns \
 grounded in motivation analysis. Predictions are scored quarterly against stated falsifiers.
->
-> **Framework v1.0.0:** predictions may be drafted, reviewed, and scored by an automated \
-agent under the same schema as the author. The prediction body is frozen at commit; \
-only dated addenda may be appended.
 
 ---
 
