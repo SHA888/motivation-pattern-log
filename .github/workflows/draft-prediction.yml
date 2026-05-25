@@ -73,7 +73,9 @@ jobs:
           branch: ${{ steps.branch.outputs.name }}
           title: "Prediction draft ${{ steps.branch.outputs.date }}"
           body: |
-            Agent-drafted prediction from the latest signal digest. Review carefully before merging.
+            Agent-drafted prediction from the latest signal digest. Framework
+            v1.0.0 permits agent review on this checklist; the author may also
+            review and merge. The checklist is identical regardless of reviewer.
 
             **Review checklist:**
             - [ ] Pattern slug is correct
@@ -87,7 +89,8 @@ jobs:
             - [ ] Addenda section exists and is empty
 
             Edit the prediction file directly on this branch before merging.
-            Once merged, the prediction body is frozen — only addenda may be appended.
+            Once merged, the prediction body is frozen for everyone — only
+            addenda may be appended. This rule binds agents and humans equally.
           add-paths: |
             predictions/*.md
           commit-message: "predictions: agent draft ${{ steps.branch.outputs.date }}"

@@ -109,9 +109,18 @@ locked. No re-scoring.
 
 ## 6. Retrospective scoring
 
-Quarterly. Human-only. Agent-assisted scoring is explicitly forbidden because
-it launders the practice's accountability through the same class of system the
-practice studies.
+Quarterly. May be performed by the repository author or by an automated agent
+following the procedure below. The schema is the source of truth; whoever
+scores must produce a retrospective entry matching it, and each entry records
+the scorer (`human` | `agent` | `mixed`).
+
+Framework v0.1.0 forbade agent-assisted scoring on the reasoning that
+self-grading "launders accountability through the same class of system the
+practice studies." That constraint was relaxed in framework v1.0.0
+(2026-05-26). The counter-balance is mechanical rather than procedural: the
+falsifier and predicted shape, frozen at creation, remain the operative test
+of whether a prediction held — not the scorer's narrative judgement, and not
+who is grading it.
 
 Each retrospective records:
 - Predictions reaching status this quarter (count by outcome)
@@ -139,7 +148,10 @@ The framework follows SemVer:
 - **Minor** (0.x.0): pattern added, leading-indicator refined, pattern retired
 - **Major** (x.0.0): schema change, test change, boundary change
 
-Current version: `0.1.0` (initial seed framework, no predictions yet).
+Current version: `1.0.0` (2026-05-26). §6 boundary change — agents are
+permitted to write, review, and score predictions under the same schemas and
+§7 boundaries as the author. See `retrospectives/2026-Q2.md` for the change
+rationale.
 
 ## 9. Open questions the framework has not resolved
 

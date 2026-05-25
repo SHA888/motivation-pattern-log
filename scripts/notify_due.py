@@ -83,8 +83,10 @@ def main() -> None:
         print(f"- [ ] [{pred_id}](predictions/{p['file']}) — window: {p['window']}")
     print()
     print(
-        "_Retrospective scoring is human-only. No agent scores predictions. "
-        "See ARCHITECTURE.md §6._"
+        "_Scoring may be performed by the repository author or by an automated agent "
+        "(framework v1.0.0). Whoever scores: the scoring addendum is bound by the "
+        "frozen falsifier and predicted shape, not by narrative judgement. "
+        "See `ARCHITECTURE.md` §6._"
     )
 
 

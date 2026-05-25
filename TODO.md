@@ -143,7 +143,6 @@ Milestones map to SemVer.
 - Database (SQLite, Postgres, DuckDB) — git is the database
 - Newsletter, RSS feed for predictions, social media automation
 - Subscriber list, email collection
-- Any agent capability to score predictions
 - Any private signal source
 - Any feature whose only justification is "it would be cool"
 

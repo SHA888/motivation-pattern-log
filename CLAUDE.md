@@ -55,15 +55,18 @@ Use `patterns/TEMPLATE.md`, `predictions/TEMPLATE.md`, `signals/TEMPLATE.md`, `r
 
 ## Architecture and content rules
 
-**Content the agent must never write:**
+**Agent-permitted automation** (framework v1.0.0, 2026-05-26):
 
-- Retrospective scores (human-only, quarterly)
-- Status updates on existing predictions
+- Weekly signal digests: cluster signals by candidate pattern activation.
+- Prediction drafts: agent may draft predictions from a signal digest.
+- Prediction review: agent may review drafted predictions against schema and framework before merge.
+- Retrospective scoring: agent may close predictions as `confirmed | failed | ambiguous`, append the scoring addendum, and produce Brier-style calibration analyses on the same terms as the author.
 
-**Agent-permitted automation:**
+**Constraints that still hold for every writer (agent or human):**
 
-- Weekly signal digests: cluster signals by candidate pattern activation, surface for human review.
-- Prediction drafts: agent may draft a prediction from a signal digest; human reviews and commits.
+- Predictions, patterns, and retrospectives must conform to the schemas validated by `scripts/validate_*.py`.
+- §7 boundaries from `ARCHITECTURE.md` apply universally: no specific-incident prediction, no actor attribution, no offensive tooling, no private signals, no monetization.
+- Scoring is bound by what the prediction said at creation — the frozen falsifier and predicted shape — not by the scorer's narrative judgement.
 
 **Framework versioning** (SemVer, in `ARCHITECTURE.md §8`):
 
@@ -71,12 +74,12 @@ Use `patterns/TEMPLATE.md`, `predictions/TEMPLATE.md`, `signals/TEMPLATE.md`, `r
 - Minor: pattern added, retired, or leading-indicator refined
 - Major: schema change, test change, or boundary change
 
-**Immutability rule:** Past prediction files may only receive addenda. Any edit to the prediction body (title, frontmatter, Reasoning, Sources) is a protocol violation.
+**Immutability rule:** Past prediction files may only receive addenda. Any edit to the prediction body (title, frontmatter, Reasoning, Sources) is a protocol violation. This rule binds agents and humans equally — the agent's expanded scope to write and score does not extend to revising committed predictions.
 
 ## Scripts
 
 - `scripts/fetch_signals.py` — fetch and deduplicate signals from curated RSS/Atom sources → JSON to stdout
 - `scripts/draft_digest.py` — call Claude API with ARCHITECTURE.md + patterns context + signals; output a `signals/YYYY-Www.md` digest file
-- `scripts/draft_prediction.py` — call Claude API with digest + framework context; draft one prediction file for human review
+- `scripts/draft_prediction.py` — call Claude API with digest + framework context; draft one prediction file (reviewed by agent or author before merge)
 
 **Do not include `Co-Authored-By:` trailers in commit messages.** This applies to all assistant-generated commits, including those produced by Claude Code or any other AI tool. Commit attribution stays with the human author. Boilerplate trailers add noise to the history without conveying meaningful authorship and have been retroactively stripped from past commits.

@@ -25,7 +25,7 @@ For each candidate, the agent provides:
 
 Brief notes on clusters the agent considered and rejected, for transparency.
 
-## Notes for human reviewer
+## Notes for review
 
 - Anything ambiguous the agent could not classify
 - Sources that returned errors or were unreachable
@@ -33,6 +33,7 @@ Brief notes on clusters the agent considered and rejected, for transparency.
 
 ---
 
-*This digest was drafted by an automated agent and merged after human review.
-The agent does not write predictions. Predictions are written by hand,
-monthly, by the repository author.*
+*This digest was drafted by an automated agent. As of framework v1.0.0
+(2026-05-26), the agent may also draft, review, and score predictions derived
+from these signals — see `CLAUDE.md` and `ARCHITECTURE.md` §6. The schema and
+the immutability rule bind agents and humans equally.*
