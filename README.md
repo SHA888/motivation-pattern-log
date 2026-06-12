@@ -36,9 +36,10 @@ This repo is one person's attempt at that practice. It is small on purpose.
 ## Cadence
 
 - **Weekly** (Monday): signal digest drafted by agent, opened as PR for review.
-- **Monthly** (1st): prediction drafted by agent from the latest digest,
-  opened as PR for review. Predictions reaching their evaluation window are
-  opened as issues for retrospective scoring.
+- **Monthly** (1st): prediction drafted by agent, synthesizing the prior
+  month's weekly digests (the pattern that activated across the most weeks is
+  targeted first), opened as PR for review. Predictions reaching their
+  evaluation window are opened as issues for retrospective scoring.
 - **Quarterly** (Apr/Jul/Oct/Jan 1): framework revision and retrospective
   scoring (by agent or author). Patterns that fail twice get rewritten or
   retired.

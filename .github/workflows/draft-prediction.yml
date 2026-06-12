@@ -2,15 +2,15 @@ name: draft-prediction
 
 on:
   schedule:
-    - cron: '0 9 * * 1'  # Every Monday at 9 AM UTC
+    - cron: '0 9 1 * *'  # 1st of each month at 9 AM UTC
   workflow_dispatch:
     inputs:
       activation:
-        description: 'Activation cluster index from the digest (1 = first listed)'
+        description: "Pattern rank across the month's digests (1 = most recurring)"
         required: false
         default: '1'
       digest_file:
-        description: 'Digest filename in signals/ (e.g. 2026-W21.md). Defaults to latest.'
+        description: 'Single digest filename in signals/ (e.g. 2026-W21.md). Overrides the monthly window.'
         required: false
         default: ''
 
@@ -73,9 +73,10 @@ jobs:
           branch: ${{ steps.branch.outputs.name }}
           title: "Prediction draft ${{ steps.branch.outputs.date }}"
           body: |
-            Agent-drafted prediction from the latest signal digest. Framework
-            v1.0.0 permits agent review on this checklist; the author may also
-            review and merge. The checklist is identical regardless of reviewer.
+            Agent-drafted prediction synthesizing the past month's signal
+            digests. Framework v1.0.0 permits agent review on this checklist;
+            the author may also review and merge. The checklist is identical
+            regardless of reviewer.
 
             **Review checklist:**
             - [ ] Pattern slug is correct

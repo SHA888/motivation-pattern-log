@@ -1,8 +1,10 @@
-"""Draft a prediction from a signal digest.
+"""Draft a prediction from a month of signal digests.
 
-Reads the most-recent signals/YYYY-Www.md (or --digest-file) and calls the
-Claude API to produce one prediction file in the repo schema. Output goes to
-stdout by default; redirect or use --out to write directly.
+Reads every signals/YYYY-Www.md digest whose ISO-week Monday falls in the prior
+calendar month (or a single --digest-file), ranks candidate patterns by how many
+of those weeks activated them, and calls the Claude API to produce one prediction
+file in the repo schema. Output goes to stdout by default; redirect or use --out
+to write directly.
 
 Usage:
     cd scripts
@@ -19,6 +21,7 @@ import argparse
 import os
 import re
 import sys
+from collections import Counter
 from datetime import date
 from pathlib import Path
 
@@ -106,6 +109,60 @@ def find_latest_digest(signals_dir: Path) -> Path:
     return digests[-1]
 
 
+def prior_month(today: date) -> tuple[int, int]:
+    """Return (year, month) of the calendar month preceding `today`."""
+    year, month = today.year, today.month - 1
+    if month == 0:
+        year, month = year - 1, 12
+    return year, month
+
+
+def find_month_digests(signals_dir: Path, year: int, month: int) -> list[Path]:
+    """Return digests whose ISO-week Monday falls in the given calendar month.
+
+    Filenames are ISO year-week (YYYY-Www). A week is assigned to the month
+    containing its Monday, so a week straddling a month boundary counts toward
+    whichever month its Monday lands in. Returned chronologically.
+    """
+    dated: list[tuple[date, Path]] = []
+    for f in signals_dir.glob("????-W??.md"):
+        if f.name.startswith("TEMPLATE"):
+            continue
+        m = re.match(r"(\d{4})-W(\d{2})\.md$", f.name)
+        if not m:
+            continue
+        monday = date.fromisocalendar(int(m.group(1)), int(m.group(2)), 1)
+        if monday.year == year and monday.month == month:
+            dated.append((monday, f))
+    dated.sort()
+    return [f for _, f in dated]
+
+
+def rank_patterns(digest_paths: list[Path]) -> tuple[list[str], Counter]:
+    """Rank valid pattern slugs by how many digests activated them.
+
+    A pattern counts at most once per digest (so the score is the number of
+    weeks it activated). Ties break by first appearance, chronologically.
+    """
+    counts: Counter = Counter()
+    order: list[str] = []
+    for p in digest_paths:
+        text = p.read_text(encoding="utf-8")
+        seen_in_digest: set[str] = set()
+        for heading in parse_activations(text):
+            m = re.match(r"\s*([a-z][a-z-]+)", heading)
+            slug = m.group(1) if m else ""
+            if slug not in VALID_PATTERNS:
+                continue
+            if slug not in order:
+                order.append(slug)
+            if slug not in seen_in_digest:
+                counts[slug] += 1
+                seen_in_digest.add(slug)
+    ranked = sorted(order, key=lambda s: (-counts[s], order.index(s)))
+    return ranked, counts
+
+
 def load_static_context(repo_root: Path) -> str:
     parts: list[str] = []
     arch_path = repo_root / "ARCHITECTURE.md"
@@ -183,27 +240,30 @@ def call_api(
     activation_hint: str,
     seq: int,
     today: str,
-    digest_filename: str,
+    digest_filenames: list[str],
     real_signal_files: list[str],
 ) -> tuple[str, dict]:
     signal_files_note = (
         "Real signals/ files you may cite (exact filenames — do not invent others):\n"
         + "\n".join(f"  signals/{f}" for f in sorted(real_signal_files))
     )
+    digest_cite_note = ", ".join(f"signals/{n}" for n in digest_filenames)
     user_content = (
         f"Framework context (ARCHITECTURE.md + all pattern files):\n\n{context}\n\n"
         f"---\n\n{existing_preds}\n\n"
         f"---\n\n"
         f"{signal_files_note}\n\n"
         f"---\n\n"
-        f"Signal digest to base the prediction on (filename: signals/{digest_filename}):\n\n"
+        f"Signal digests to base the prediction on "
+        f"(this month's weekly digests: {digest_cite_note}):\n\n"
         f"{digest_text}\n\n"
         f"---\n\n"
-        f"Task: Draft one prediction based on the activation cluster: **{activation_hint}**\n\n"
+        f"Task: Draft one prediction synthesizing this month's evidence for the "
+        f"recurring activation: **{activation_hint}**\n\n"
         f"Use filename PREDICTION-{today.replace('-', '')}-{seq:04d}.md "
         f"and Created date {today}.\n"
         f"Sequence number: {seq:04d}.\n"
-        f"When citing the digest in Sources, use exactly: signals/{digest_filename}\n"
+        f"When citing digests in Sources, use one or more of exactly: {digest_cite_note}\n"
         f"Output only the raw markdown file."
     )
     response = client.messages.create(
@@ -269,13 +329,13 @@ def main() -> None:
         "--digest-file",
         type=Path,
         default=None,
-        help="Signals digest .md file (default: latest signals/YYYY-Www.md)",
+        help="Single signals digest .md file (overrides the prior-month window)",
     )
     parser.add_argument(
         "--activation",
         type=int,
         default=1,
-        help="Which activation cluster to use, 1-indexed (default: 1 = first listed)",
+        help="Pattern rank across the month's digests, 1-indexed (default: 1 = most recurring)",
     )
     parser.add_argument(
         "--out",
@@ -297,29 +357,53 @@ def main() -> None:
     signals_dir = args.repo_root / "signals"
     predictions_dir = args.repo_root / "predictions"
 
-    digest_path = args.digest_file or find_latest_digest(signals_dir)
-    digest_text = digest_path.read_text(encoding="utf-8")
-    digest_filename = digest_path.name
-    print(f"INFO: using digest {digest_filename}", file=sys.stderr)
+    today = date.today()
+
+    if args.digest_file:
+        digest_paths = [args.digest_file]
+    else:
+        year, month = prior_month(today)
+        digest_paths = find_month_digests(signals_dir, year, month)
+        if not digest_paths:
+            fallback = find_latest_digest(signals_dir)
+            print(
+                f"INFO: no digests with an ISO-week Monday in {year}-{month:02d}; "
+                f"falling back to latest digest {fallback.name}",
+                file=sys.stderr,
+            )
+            digest_paths = [fallback]
+
+    digest_filenames = [p.name for p in digest_paths]
+    digest_text = "\n\n---\n\n".join(
+        f"## Digest: {p.name}\n\n{p.read_text(encoding='utf-8')}" for p in digest_paths
+    )
+    print(
+        f"INFO: using {len(digest_paths)} digest(s): {', '.join(digest_filenames)}",
+        file=sys.stderr,
+    )
 
     real_signal_files = [f.name for f in signals_dir.glob("*.md") if f.name != "TEMPLATE.md"]
 
-    activations = parse_activations(digest_text)
-    if not activations:
-        print("ERROR: no activation clusters found in digest", file=sys.stderr)
+    ranked, counts = rank_patterns(digest_paths)
+    if not ranked:
+        print("ERROR: no valid pattern activations found in digest(s)", file=sys.stderr)
         sys.exit(1)
 
     idx = args.activation - 1
-    if idx >= len(activations):
+    if idx < 0 or idx >= len(ranked):
         print(
             f"ERROR: --activation {args.activation} out of range "
-            f"(digest has {len(activations)} activation(s))",
+            f"({len(ranked)} distinct pattern(s) activated this month)",
             file=sys.stderr,
         )
         sys.exit(1)
 
-    activation_hint = activations[idx]
-    print(f"INFO: targeting activation: {activation_hint}", file=sys.stderr)
+    chosen = ranked[idx]
+    activation_hint = (
+        f"{chosen} (activated in {counts[chosen]} of {len(digest_paths)} "
+        f"weekly digest(s) this month)"
+    )
+    print(f"INFO: targeting pattern: {activation_hint}", file=sys.stderr)
 
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
@@ -329,9 +413,9 @@ def main() -> None:
     context = load_static_context(args.repo_root)
     existing_preds = load_existing_predictions(predictions_dir)
     seq = next_sequence(predictions_dir)
-    today = date.today().isoformat()
+    today_str = today.isoformat()
 
-    print(f"INFO: calling {args.model} (seq {seq:04d}, date {today})...", file=sys.stderr)
+    print(f"INFO: calling {args.model} (seq {seq:04d}, date {today_str})...", file=sys.stderr)
 
     client = anthropic.Anthropic(api_key=api_key)
     content, usage = call_api(
@@ -342,8 +426,8 @@ def main() -> None:
         existing_preds,
         activation_hint,
         seq,
-        today,
-        digest_filename,
+        today_str,
+        digest_filenames,
         real_signal_files,
     )
     log_cost(args.model, usage)
@@ -352,11 +436,11 @@ def main() -> None:
         print("ERROR: empty response from API", file=sys.stderr)
         sys.exit(1)
 
-    content = fix_signal_sources(content, digest_filename, signals_dir)
+    content = fix_signal_sources(content, digest_filenames[-1], signals_dir)
 
     if args.out:
         args.out.mkdir(parents=True, exist_ok=True)
-        filename = f"PREDICTION-{today.replace('-', '')}-{seq:04d}.md"
+        filename = f"PREDICTION-{today_str.replace('-', '')}-{seq:04d}.md"
         out_path = args.out / filename
         out_path.write_text(content if content.endswith("\n") else content + "\n", encoding="utf-8")
         print(f"INFO: written to {out_path}", file=sys.stderr)
