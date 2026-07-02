@@ -89,6 +89,12 @@ jobs:
             - [ ] Sources link to real signals from the digest
             - [ ] Addenda section exists and is empty
 
+            The `verify-prediction-sources` check runs automatically on this PR and
+            blocks merge if any claim attributed to a cited digest is unsupported,
+            misattributed to the wrong week, or drops that digest's own caveat
+            (see `scripts/verify_prediction_sources.py`). It checks claim-level
+            accuracy, not the judgment calls above — still read the diff yourself.
+
             Edit the prediction file directly on this branch before merging.
             Once merged, the prediction body is frozen for everyone — only
             addenda may be appended. This rule binds agents and humans equally.
