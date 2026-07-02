@@ -22,12 +22,28 @@ cd scripts && uv run validate_predictions.py ../predictions
 # Validate all pattern files against schema
 cd scripts && uv run validate_patterns.py ../patterns
 
+# Verify a prediction's cited claims actually match its cited signals/ digests
+cd scripts && uv run verify_prediction_sources.py ../predictions/PREDICTION-YYYYMMDD-NNNN.md
+
 # Lint Python
 cd scripts && uv run ruff check .
 cd scripts && uv run ruff format --check .
 ```
 
 CI runs both validators and ruff on every push/PR (`.github/workflows/ci.yml`).
+
+`verify_prediction_sources.py` is a separate, narrower check from `validate_predictions.py`:
+the schema validator confirms cited `signals/` filenames are well-formed and exist; it does
+**not** confirm that the claims attributed to a cited digest are actually supported by that
+digest's text. `verify_prediction_sources.py` calls the Claude API to check every claim in a
+prediction's `Leading indicator observed` field and `Reasoning` section against the real text
+of each digest it cites, and flags `UNSUPPORTED` (fact not in the digest), `MISATTRIBUTED`
+(fact is real but under a different week), or `MISCHARACTERIZED` (fact is real but the digest
+itself caveats or discards it and the prediction drops that caveat). It runs automatically and
+blocks the PR check on any `predictions/PREDICTION-*.md` change
+(`.github/workflows/verify-prediction-sources.yml`) — closing the gap where a prediction could
+cite a real digest filename while still misrepresenting what that digest said, previously
+catchable only by a manual `@claude review`.
 
 Pre-commit hooks: trailing whitespace, YAML/JSON check, ruff lint+format. Run `pre-commit install` to activate locally.
 
