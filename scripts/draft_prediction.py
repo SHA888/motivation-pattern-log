@@ -231,6 +231,70 @@ def fix_signal_sources(content: str, digest_filename: str, signals_dir: Path) ->
     return re.sub(r"signals/([\w.\-]+\.md)", replace, content)
 
 
+PATTERN_FIELD_RE = re.compile(r"^-\s+\*\*Pattern:\*\*\s*(.+)$", re.MULTILINE)
+ACTIVATION_HEADING_RE = re.compile(r"^### ([a-z][a-z-]+)\b.*$", re.MULTILINE)
+SIGNALS_LINE_RE = re.compile(r"^-\s+\*\*Signals:\*\*\s*(.+)$", re.MULTILINE)
+MD_LINK_RE = re.compile(r"\[([^\]]+)\]\((https?://[^\s)]+)\)")
+SOURCES_BLOCK_RE = re.compile(r"(^## Sources\s*\n)(.*?)(?=^## Addenda)", re.MULTILINE | re.DOTALL)
+
+
+def extract_pattern_urls(digest_text: str, pattern_slug: str) -> list[tuple[str, str]]:
+    """Return ordered, deduped (title, url) pairs from every activation subsection
+    in digest_text whose heading is `pattern_slug`.
+
+    A digest can activate the same pattern in more than one subsection in the
+    same week (e.g. two independent boredom-with-asymmetric-leverage clusters);
+    all of them are pulled in. Subsections for other patterns, and Discarded
+    clusters / Notes for review (which aren't backed by a Signals: line), are
+    excluded — those URLs don't back this prediction's claims.
+    """
+    headings = list(ACTIVATION_HEADING_RE.finditer(digest_text))
+    seen: set[str] = set()
+    urls: list[tuple[str, str]] = []
+    for i, m in enumerate(headings):
+        if m.group(1) != pattern_slug:
+            continue
+        end = headings[i + 1].start() if i + 1 < len(headings) else len(digest_text)
+        section = digest_text[m.end() : end]
+        sig_line = SIGNALS_LINE_RE.search(section)
+        if not sig_line:
+            continue
+        for title, url in MD_LINK_RE.findall(sig_line.group(1)):
+            if url not in seen:
+                seen.add(url)
+                urls.append((title, url))
+    return urls
+
+
+def expand_sources(content: str, signals_dir: Path) -> str:
+    """Expand each cited signals/*.md bullet in the Sources section with the
+    actual article URLs behind this prediction's Pattern, deterministically —
+    so a reader can follow a claim straight to its source instead of opening
+    the digest file on GitHub.
+    """
+    pattern_match = PATTERN_FIELD_RE.search(content)
+    block_match = SOURCES_BLOCK_RE.search(content)
+    if not pattern_match or not block_match:
+        return content
+    pattern_slug = pattern_match.group(1).strip()
+
+    out_lines = []
+    for line in block_match.group(2).splitlines():
+        out_lines.append(line)
+        fname_match = re.search(r"signals/[\w.\-]+\.md", line)
+        if not fname_match:
+            continue
+        digest_path = signals_dir / Path(fname_match.group(0)).name
+        if not digest_path.is_file():
+            continue
+        digest_text = digest_path.read_text(encoding="utf-8")
+        for title, url in extract_pattern_urls(digest_text, pattern_slug):
+            out_lines.append(f"  - [{title}]({url})")
+    new_block = "\n".join(out_lines) + "\n"
+
+    return content[: block_match.start(2)] + new_block + content[block_match.end(2) :]
+
+
 def call_api(
     client: anthropic.Anthropic,
     model: str,
@@ -437,6 +501,7 @@ def main() -> None:
         sys.exit(1)
 
     content = fix_signal_sources(content, digest_filenames[-1], signals_dir)
+    content = expand_sources(content, signals_dir)
 
     if args.out:
         args.out.mkdir(parents=True, exist_ok=True)
