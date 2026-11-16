@@ -1,0 +1,2027 @@
+{
+  "fetched_at": "2026-11-16T14:32:29.080761+00:00",
+  "week": "2026-W47",
+  "sources_scanned": 7,
+  "total_fetched": 164,
+  "new_signals": 164,
+  "signals": [
+    {
+      "id": "https://krebsonsecurity.com/?p=74550",
+      "title": "Who Runs the Ransomware Group Qilin?",
+      "url": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
+      "published": "2026-11-11T18:06:01+00:00",
+      "source": "Krebs on Security",
+      "summary": "The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade that all point to a 36-year-old man living in St. Petersburg, Russia.",
+      "candidate_patterns": [
+        "grievance-and-humiliation-reversal",
+        "coercion-and-desperation",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://krebsonsecurity.com/?p=74619",
+      "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+      "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+      "published": "2026-11-10T21:55:03+00:00",
+      "source": "Krebs on Security",
+      "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important security updates from other software makers, including Adobe, Apple, Google and Mozilla.",
+      "candidate_patterns": [
+        "grievance-and-humiliation-reversal",
+        "coercion-and-desperation",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://krebsonsecurity.com/?p=74588",
+      "title": "Want to Rent an Internet Address at the White House?",
+      "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+      "published": "2026-11-05T04:36:17+00:00",
+      "source": "Krebs on Security",
+      "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder's web hosting business was ground zero for cyberattacks against election systems in Arizona and Illinois in 2016.",
+      "candidate_patterns": [
+        "grievance-and-humiliation-reversal",
+        "coercion-and-desperation",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://krebsonsecurity.com/?p=74548",
+      "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
+      "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
+      "published": "2026-11-03T02:24:31+00:00",
+      "source": "Krebs on Security",
+      "summary": "Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Internet connection out to strangers and conducts advertising fraud. Experts involved in the takedown say the action is likely to sever the botnet's access to more than 10 million additional compromised systems, including other Internet of Things (IoT) products such as Android-based healthcare devices and karaoke machines.",
+      "candidate_patterns": [
+        "grievance-and-humiliation-reversal",
+        "coercion-and-desperation",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://krebsonsecurity.com/?p=74522",
+      "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+      "url": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+      "published": "2026-10-21T15:26:07+00:00",
+      "source": "Krebs on Security",
+      "summary": "Expect to see quite a few websites serving \"404\" or \"Page Not Found\" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaws, and that these critical bugs are already being exploited in the wild.",
+      "candidate_patterns": [
+        "grievance-and-humiliation-reversal",
+        "coercion-and-desperation",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://krebsonsecurity.com/?p=74480",
+      "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+      "url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+      "published": "2026-10-19T13:48:56+00:00",
+      "source": "Krebs on Security",
+      "summary": "U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources close to the investigation say one of the executives in the United States even helped ShinyHunters operate a website that pressured victims into paying a ransom.",
+      "candidate_patterns": [
+        "grievance-and-humiliation-reversal",
+        "coercion-and-desperation",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://krebsonsecurity.com/?p=74435",
+      "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
+      "url": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+      "published": "2026-10-14T14:22:49+00:00",
+      "source": "Krebs on Security",
+      "summary": "The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial restrictions.",
+      "candidate_patterns": [
+        "grievance-and-humiliation-reversal",
+        "coercion-and-desperation",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://krebsonsecurity.com/?p=74474",
+      "title": "Microsoft Patches More Than 1,400 Security Flaws",
+      "url": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
+      "published": "2026-10-13T23:24:53+00:00",
+      "source": "Krebs on Security",
+      "summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.",
+      "candidate_patterns": [
+        "grievance-and-humiliation-reversal",
+        "coercion-and-desperation",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://krebsonsecurity.com/?p=74440",
+      "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
+      "url": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+      "published": "2026-10-10T00:17:42+00:00",
+      "source": "Krebs on Security",
+      "summary": "Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSecurity.",
+      "candidate_patterns": [
+        "grievance-and-humiliation-reversal",
+        "coercion-and-desperation",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://krebsonsecurity.com/?p=74398",
+      "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
+      "url": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
+      "published": "2026-10-07T13:48:45+00:00",
+      "source": "Krebs on Security",
+      "summary": "A teenager from Amman, Jordan suspected of leading the prolific data theft and extortion group ShinyHunters has been detained and is reportedly cooperating with the FBI to identify other members of the hacking gang. KrebsOnSecurity has learned that the suspect, who uses the hacker handle \"Rey,\" was detained as ShinyHunters was in the process of extorting a business unit recently divested by the global aerospace company Boeing, which manufactures the fleet of planes used by the employer of Rey's father -- Royal Jordanian Airlines.",
+      "candidate_patterns": [
+        "grievance-and-humiliation-reversal",
+        "coercion-and-desperation",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "/node/25796",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "published": "2026-11-13T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability CVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requir",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25791",
+      "title": "Siemens Desigo, Gridscale",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
+      "published": "2026-11-12T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers the status of impact of various Siemens software products. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25793",
+      "title": "Siemens RUGGEDCOM APE1808",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
+      "published": "2026-11-12T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary Palo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Customers are advised to consult and implement the workarounds provided in Palo Alto Networks' upstream security notifications. The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-109618, CVE-2026-109619) CVSS Vendor Equipment v3 9.8 Siemens RUGGEDCOM APE1808 1 Vulnerability Use After Free Background Critical Infrastruct",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25792",
+      "title": "Siemens RUGGEDCOM APE1808",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04",
+      "published": "2026-11-12T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary Palo Alto Networks has published information on a vulnerability in PAN-OS related to the Node2Shell vulnerability. This advisory lists the related Siemens Industrial products affected by this vulnerability. Customers are advised to consult and implement the workarounds provided in Palo Alto Networks' upstream security notifications. The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens RUGGEDCOM APE1808 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors:",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25790",
+      "title": "Siemens Building Automation and Energy Products",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
+      "published": "2026-11-12T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary On October 21, 2026, the PHP project and security researchers disclosed two critical, unauthenticated remote code execution vulnerabilities in the core PHP language runtime known as \"php2shell\" (tracked as CVE-2026-109618 and CVE-2026-109619). This advisory covers the status of impact of various Siemens software products. As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' ",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25789",
+      "title": "Siemens Industrial Edge Management",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
+      "published": "2026-11-12T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary Siemens is currently assessing the impact of Node2Shell (CVE-2026-111497) on Industrial Edge. Please check your Industrial Edge Management (IEM) setup: - No Management Applications installed: No action is required. Although the affected Brotli library is included in the IEM software stack, the affected functionality is not used or exposed. The same applies to IEDK. - Management Applications installed: Follow the specific mitigations until a fix is available. - Device Applications installed: Follow the specific mitigations until a fix is available. For Siemens-managed services",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25787",
+      "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+      "published": "2026-11-10T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "CISA has added six new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-20320 Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability CVE-2026-111560 Barracuda Networks Multiple Products OS Command Injection Vulnerability CVE-2026-111793 Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability CVE-2026-116606 Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability CVE-2026-124194 ",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25769",
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "published": "2026-11-09T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-102895 GPUStack Improper Authentication Vulnerability CVE-2026-116779 SignalWire FreeSwitch Code Injection Vulnerability CVE-2026-123158 OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability CVE-2026-123218 IBM Aspera Faspex Incorrect Authorization Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD)",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25756",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-11-06T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-19868 SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV ",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25744",
+      "title": "US Government Partners Urge Hardening Industrial Refrigeration and Cold Chain Monitoring Systems",
+      "url": "https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems",
+      "published": "2026-11-05T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "Overview The Cybersecurity and Infrastructure Security Agency (CISA), Federal Bureau of Investigation (FBI), Health and Human Services (HHS), U.S. Department of Agriculture (USDA), and the Department of Transportation (DoT)—hereafter referred to as “the authoring organizations”—are aware of malicious cyber activity targeting industrial refrigeration and cold chain monitoring systems globally. Organizations in the Healthcare and Public Health , Chemical , Food and Agriculture , and Transportation Systems Sectors widely use these systems, including in refrigerated transport services, for automat",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25746",
+      "title": "Post-Quantum Questions to Ask Your Vendors",
+      "url": "https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors",
+      "published": "2026-11-05T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As quantum computing advances, widely used public-key cryptography will become vulnerable to compromise from cryptographically relevant quantum computers (CRQCs). To protect their systems and data, organizations must plan for and transition to PQC—which includes algorithms capable of withstanding both clas",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25749",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-11-04T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2024-27834 Apple Multiple Products Improper Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and r",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25747",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-11-03T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-119977 WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25742",
+      "title": "Subnet Solutions PowerSYSTEM Center",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
+      "published": "2026-11-03T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute unauthorized SQL commands and gain access to unauthorized resources. The following versions of Subnet Solutions PowerSYSTEM Center are affected: PowerSYSTEM Center 2020 <=5.29.x (CVE-2026-63017) PowerSYSTEM Center 2024 >=6.0.x|<=6.2.x (CVE-2026-63017, CVE-2026-63774) PowerSYSTEM Center 2026 >=7.0.x|<=7.1.x (CVE-2026-63017, CVE-2026-63774) CVSS Vendor Equipment v3 9 Subnet Solutions PowerSYSTEM Center 2 Vulnerabilities Incorrect Authorization, Improper Neutralization of Special Elements used in",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25738",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "published": "2026-10-30T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-111357 Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability CVE-2026-118527 Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management r",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25729",
+      "title": "Hitachi Energy TRO600 series products",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02",
+      "published": "2026-10-29T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary Hitachi Energy is aware of multiple vulnerabilities that affect the TRO600 series product versions listed in this document. These vulnerabilities can be exploited for remote code execution (RCE) to carry out further attacks and disclosure of sensitive information. Please refer to the Recommended Immediate Actions section for information about the mitigation/remediation. The following versions of Hitachi Energy TRO600 series products are affected: TRO600 vers:TRO600/<=9.2.1.6, vers:TRO600/<=9.1.1.0, 9.2.2.1, 9.1.2.0 (CVE-2026-10756, CVE-2026-106087) CVSS Vendor Equipment v3 7.",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25730",
+      "title": "Hitachi Energy CoreTec Product",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
+      "published": "2026-10-29T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary Hitachi Energy is aware of OS command injection and Dirty Frag vulnerabilities that affect CoreTec product versions listed in this document. Successful exploitation of these vulnerabilities could result in impact on confidentiality, integrity and availability of the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. The following versions of Hitachi Energy CoreTec Product are affected: CoreTec5 vers:CoreTec5/<=3.4.0, 5.0.0 (CVE-2026-13162, CVE-2026-43284) CoreTec4 vers:CoreTec4/<=3.4.0 (CVE-2026-13162) CVSS Vendor Equi",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25735",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "published": "2026-10-29T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability CVE-2026-76418 Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updat",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25728",
+      "title": "Siemens Mendix SAML Module",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
+      "published": "2026-10-29T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary Mendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Mendix SAML Module are affected: Mendix SAML (Mendix 10 compatible) vers:intdot/<4.2.4 (CVE-2026-89209) Mendix SAML (Mendix 11 compatible) vers:intdot/<4.2.4 (CVE-2026-89209) Mendix SAML (Mendix 9 compatible) vers:int",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25727",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "published": "2026-10-28T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-41709 Broadcom VMWare ESX Insufficient Logging Vulnerability CVE-2026-46300 Linux Kernel Missing Initialization of a Variable Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25715",
+      "title": "Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
+      "published": "2026-10-27T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with, destruction, or deletion of information, and a denial-of-service (DoS) condition of the system. The following versions of Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, HyperHistorian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32, BizViz, Mitsubishi Electric Iconics Digital Solutions GENE",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25724",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "published": "2026-10-27T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-48356 Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability CVE-2026-111497 Google Brotli Unchecked Return Value Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civ",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25714",
+      "title": "EPICS Base",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
+      "published": "2026-10-27T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code. The following versions of EPICS Base are affected: EPICS Base release <=7.0.10 (CVE-2026-114595, CVE-2026-114596, CVE-2026-114597, CVE-2026-114598) CVSS Vendor Equipment v3 9.8 The EPICS Community EPICS Base release 3 Vulnerabilities Integer Overflow or Wraparound, Improper Handling of Length Parameter Inconsistency, Access of Resource Using Incompatible Type ('Type Confusion') B",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25716",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "published": "2026-10-26T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching : CVE-2026-109618 – PHP Memory Corruption Vulnerability CVE-2026-109619 – PHP Stale Internal Request-State Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Ex",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25707",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-10-23T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-114625 Arista VeloCloud Orchestrator SQL Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requ",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25710",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
+      "published": "2026-10-23T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-110447 Collabora Online – Built-in CODE Server OS Command Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25703",
+      "title": "Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-11",
+      "published": "2026-10-22T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary Multiple vulnerabilities have been identified in the additional GNU/Linux subsystem of the firmware version V3.1.7 for the SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP (incl. SIPLUS variant). Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP are affected: SIMATIC S7-1500 CPU 1518-4 PN/DP MFP (6ES7518-4AX00-1AB0) vers:intdot/>=3.1.7 SIMATIC S7-1500 CPU 1518-4 PN/DP MFP (6ES7518-4AX00-1AC0) vers:intdot/>=3.1.7 SIMATIC S7-1500 CPU 1518F-4 PN/DP",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25702",
+      "title": "Siemens SIMATIC S7-1500 TM MFP",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-16",
+      "published": "2026-10-22T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary Multiple vulnerabilities have been identified in the additional GNU/Linux subsystem of the SIMATIC S7-1500 TM MFP V1.1.1. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens SIMATIC S7-1500 TM MFP are affected: SIMATIC S7-1500 TM MFP - GNU/Linux subsystem vers:all/* CVSS Vendor Equipment v3 10 Siemens SIMATIC S7-1500 TM MFP - GNU/Linux subsystem 377 Vulnerabilities Access of Uninitialized Pointer, Buffer Copy without Checking Size of Input ('Classic Buffer Overflow'), Deadlock,",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25697",
+      "title": "Siemens SIMATIC S7 PLCs Web Server",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-14",
+      "published": "2026-10-22T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary SIMATIC S7-1500 devices contain multiple vulnerabilities in the web server that could allow an attacker to execute malicious code in an authorized user’s browser session and perform PLC operations within the scope of that user’s authorization. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens SIMATIC S7 PLCs Web Server are affected: SIMATIC Drive Controller CPU 1504D TF (6ES7615-4DF10-0AB0) vers:all/* (CVE-2026-63350, CVE-2026-63351, CVE-2026-63352, CVE-2026-63353, CVE-2026-6",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "/node/25686",
+      "title": "Siemens Capital Embedded AR Classic",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04",
+      "published": "2026-10-22T12:00:00+00:00",
+      "source": "CISA Cybersecurity Advisories",
+      "summary": "View CSAF Summary The products listed below contain an out-of-bounds read vulnerability that could allow an attacker to cause abnormal product behavior, instability, or denial of service. Siemens has released a new version for Capital Embedded AR Classic R20-11 and recommends updating to the latest version. Siemens is preparing further fix versions and recommends specific countermeasures for products where fixes are not, or not yet available. The following versions of Siemens Capital Embedded AR Classic are affected: Capital Embedded AR Classic 431-422 vers:all/* (CVE-2026-89208) Capital Embed",
+      "candidate_patterns": [
+        "ideology-faith-nation",
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "https://www.schneier.com/?p=72944",
+      "title": "Usable Security at Luxury Hotels",
+      "url": "https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html",
+      "published": "2026-11-16T12:04:42+00:00",
+      "source": "Schneier on Security",
+      "summary": "Interesting case study from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine refund requests and got fraudulent ones approved. This is a good illustration why “just don’t click on links” is bad advice. It can’t work when answering strangers’ emails is the job. Even worse, in this case the guest-first culture punishes hesitation. More interesting, the case study shows that splitting security between owner, operator, and brand leaves nobody accountable. And this is exactly the setting where blaming staff becomes the convenient",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "https://www.schneier.com/?p=72935",
+      "title": "Upcoming Speaking Engagements",
+      "url": "https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html",
+      "published": "2026-11-14T17:02:39+00:00",
+      "source": "Schneier on Security",
+      "summary": "This is a current list of where and when I am scheduled to speak: I’m speaking at the Catalyst Summit in Brampton, Ontario, Canada, on Wednesday, November 18, 2026. I’m speaking at QT Qonference 2026 in Toronto, Ontario, Canada, on Thursday, November 19, 2026. The list is maintained on this page .",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "https://www.schneier.com/?p=72930",
+      "title": "Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters",
+      "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html",
+      "published": "2026-11-13T22:00:46+00:00",
+      "source": "Schneier on Security",
+      "summary": "Climate change is the issue . As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy.",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "https://www.schneier.com/?p=72922",
+      "title": "AI Doesn’t Have to Go Rogue to Break the World",
+      "url": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html",
+      "published": "2026-11-13T12:03:30+00:00",
+      "source": "Schneier on Security",
+      "summary": "This essay is adapted from a keynote speech delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared in CyberScoop . I want to talk about AI hacking. There are three aspects: people hacking AI systems, people using AI to hack other systems, and AIs hacking systems on their own, not even maliciously. The last two matter more than the first. The third is the weirdest and potentially the most destabilizing. I started writing about this in 2021 and in my 2022 book, A Hacker’s Mind . Back then I said it was mostly still science fiction, but not stupid sci",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "https://www.schneier.com/?p=72914",
+      "title": "Another Way Police Are Locating People from Their Smartphones",
+      "url": "https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html",
+      "published": "2026-11-12T12:02:58+00:00",
+      "source": "Schneier on Security",
+      "summary": "Penlink’s Webloc is an application that locates people using information from the weather, gaming, email, and religious apps on their phone. It’s sold to the police. The tool collects vast quantities of location data from smartphones via commonly used weather, gaming, email and religious apps. It can build a detailed picture of where a smartphone has been over the past 12 months, and update the data hourly, showing the movements of people on a near real-time basis. Law enforcement officers can use Webloc to zero in on a map and look at all phones that were present at a specific place and time,",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "https://www.schneier.com/?p=72909",
+      "title": "Three People Arrested for AI-Enhanced Impersonation Fraud",
+      "url": "https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html",
+      "published": "2026-11-11T12:05:34+00:00",
+      "source": "Schneier on Security",
+      "summary": "It’s hard to believe how lucrative this crime can be: According to a press release from the United States attorney’s office for the southern district of New York, three men ­ Jacob Soall, Sharon Hazan, and Guy Sheetrit ­ were arrested for using AI to alter and impersonate the voices and images of executives and attorneys at various companies in order to convince employees to send over large payments. Soall and Hazan were arrested in Spain over the summer, while Sheetrit was arrested in the United Kingdom in September. The alleged fraud took place between 2024 and 2026...",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "https://www.schneier.com/?p=72898",
+      "title": "New OpenSSH Vulnerability",
+      "url": "https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html",
+      "published": "2026-11-10T12:02:38+00:00",
+      "source": "Schneier on Security",
+      "summary": "It’s a bad one , and it’s been in the code for a decade: A newly disclosed flaw involving OpenSSH and musl, dubbed “*sshole,” allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts configured to block password authentication simply by entering an oversized password. “Oversized” means longer than 256 bytes. Details . Slashdot thread . And another news article .",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "https://www.schneier.com/?p=72904",
+      "title": "AI Security",
+      "url": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
+      "published": "2026-11-09T12:05:39+00:00",
+      "source": "Schneier on Security",
+      "summary": "Two weeks ago, I attended the [un]prompted AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.) AI security can be divided into three broad topics. It’s important for researchers to understand which one they are working on. And it’s important for us as a community to work on them all. They are: security of AI, security with AI, and security from AI. [un]prompted had good talks about all three...",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "https://www.schneier.com/?p=72854",
+      "title": "Friday Squid Blogging: New Jurassic Squid Predecessors",
+      "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-new-jurassic-squid-predecessors.html",
+      "published": "2026-11-06T22:05:12+00:00",
+      "source": "Schneier on Security",
+      "summary": "News story: “ Scientists discover a bizarre Jurassic ‘squid’ unlike anything ever seen .” Scientists have identified the “fattest” belemnite ever discovered, a bizarre, barrel-shaped squid relative that lived in Wyoming’s ancient seas 160 million years ago. The exceptionally rare fossils reveal a creature unlike anything previously known, potentially a predator of smaller squid-like animals and a surprising survivor of a supposedly vanished family. As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered...",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "https://www.schneier.com/?p=72894",
+      "title": "Pinpointing Location of Videos from Background Airplane Sounds",
+      "url": "https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html",
+      "published": "2026-11-06T14:57:48+00:00",
+      "source": "Schneier on Security",
+      "summary": "This is fascinating : The video describes a technique that can reveal where an otherwise unidentifiable recording was made by analyzing its audio for the faint sounds of passing aircraft. The technique is both fascinating and frightening. It works by looking at Doppler curves, which plot the way a plane’s sound changes as it passes overhead because of the Doppler effect. This is the same familiar Doppler effect that causes the frequency of a siren to rise as it approaches and then fall as it passes by and moves away. More generally, it’s the phenomenon whereby the frequency of a wave perceived",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17377v1",
+      "title": "Beyond Attack-Based Accuracy: Rethinking Adversarial Robustness Evaluation Through Structural Gradient Alignment",
+      "url": "https://arxiv.org/abs/2611.17377",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17377v1 Announce Type: new Abstract: Visual adversarial robustness remains a fundamental security property as vision systems evolve from conventional classifiers to vision-language models (VLMs) and large vision-language models (LVLMs), with visual inputs remaining an attack surface across generations. Yet existing evaluation methods often depend on prescribed attacks, in-distribution data, extensive probing, or classifier-specific formulations, limiting external auditing of diverse models. We introduce Structural Gradient Alignment (SGA), a complementary robustness metric measuring",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17393v1",
+      "title": "Evolutionary-based Transfer Learning for Physical Attack on End-to-End Autoencoder Communications",
+      "url": "https://arxiv.org/abs/2611.17393",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17393v1 Announce Type: new Abstract: End-to-end autoencoder communication has emerged as a promising means of achieving efficient data transmission across various domains. Nevertheless, vulnerabilities have recently been revealed in these systems by adversarial attacks, wherein malevolent entities manipulate the transmitted signals to deceive the autoencoder. This paper leverages the applications of evolutionary algorithms to solve a challenging optimization problem of launching physical attacks against end-to-end autoencoder communication. For white-box scenarios, we introduce PAGA",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17395v1",
+      "title": "Can LLMs Write Backdoors? An Empirical Security Study of Weight-Space Programming",
+      "url": "https://arxiv.org/abs/2611.17395",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17395v1 Announce Type: new Abstract: Recent advances in weight-space programming (WSP) have demonstrated that large language models (LLMs) can directly inspect and modify neural network weights without conventional gradient-based training. While this capability opens new possibilities for model improvement, it also raises an important security question: Can LLMs exploit weight-space programming to inject backdoors into neural networks? To answer this question, we present an empirical security study of LLM-driven weight-space programming for backdoor injection. Specifically, we inves",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17534v1",
+      "title": "I2C-GRPO: Insight Importance Checklist for Reinforcement Learning in a Multi-Agent DDoS Alert Triage Workflow",
+      "url": "https://arxiv.org/abs/2611.17534",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17534v1 Announce Type: new Abstract: Large language model (LLM) agents are increasingly used for investigative tasks over incomplete evidence, such as cybersecurity alert triage, but reinforcement learning (RL) for such tasks is difficult: intermediate steps have no verifiable labels, rollouts are costly, and outcome rewards are sparse. We propose Insight Importance Checklist (I2C)-GRPO, a checklist reward for intermediate investigation steps. For each decision point, a panel of expert LLMs proposes investigative actions, their atomic forensic insights are extracted, and a separate ",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17554v1",
+      "title": "Online Allocation with Differential Privacy",
+      "url": "https://arxiv.org/abs/2611.17554",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17554v1 Announce Type: new Abstract: We study private online allocation problems, where allocation decisions must satisfy differential privacy (DP) to protect sensitive user information while optimizing performance under limited resources. We first formalize differential privacy notions suited to different privacy requirements in online allocation and establish the fundamental performance limits of any algorithm under these definitions. Based on these insights, we propose PPOA, a privacy-preserving meta algorithm for online allocation, and establish sufficient conditions under which",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17596v1",
+      "title": "Tractable Importance Sampling for Monte Carlo Privacy Accounting",
+      "url": "https://arxiv.org/abs/2611.17596",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17596v1 Announce Type: new Abstract: Evaluating tight Differential Privacy (DP) parameters for DP matrix factorization with privacy amplification by sampling requires analyzing high-dimensional, correlated Gaussian mixtures. Because integrating these mixture distributions to find the exact privacy failure probability ($\\delta$) is analytically intractable, these mechanisms are typically analyzed using Monte Carlo accounting. However, standard sampling suffers from prohibitive variance when estimating small $\\delta$ associated with strict privacy guarantees, which in turn requires a ",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17646v1",
+      "title": "Binarization as an Attack Surface in Weightless Neural Networks",
+      "url": "https://arxiv.org/abs/2611.17646",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17646v1 Announce Type: new Abstract: Weightless Neural Networks (WNNs) are lightweight classifiers that binarize their inputs and learn by storing binary patterns in lookup memories, which makes them attractive for resource-constrained tasks such as intrusion detection. Because a small perturbation that crosses no binarization threshold leaves the binary input unchanged, WNNs may appear naturally robust to adversarial examples; a perturbation that does cross a threshold, however, can still change the prediction. We study this tension in WiSARD, the canonical RAM-based WNN, and in tw",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17703v1",
+      "title": "iGRAIL: Blockchain-Based Generative Federated Learning for Trustworthy Healthcare Intelligence",
+      "url": "https://arxiv.org/abs/2611.17703",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17703v1 Announce Type: new Abstract: Healthcare organizations collect huge amounts of patient data from clinical records, medical tests, monitoring systems, and healthcare services. Such data can underpin intelligent healthcare analytics but remains distributed across institutions and cannot be shared directly due to privacy, security, and trust concerns. Federated learning (FL) enables collaborative learning without sharing raw patient records, but the exchanged model information remains vulnerable to privacy leakage, tampering, replay, and unauthorized access. In this paper, we pr",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17747v1",
+      "title": "Evaluating the Robustness of PRNU Source-Camera Attribution to the Fingerprint-Copy Attack: An Open Toolkit with Triangle-Test Detection",
+      "url": "https://arxiv.org/abs/2611.17747",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17747v1 Announce Type: new Abstract: Photo-Response Non-Uniformity (PRNU) is the de facto standard trace for sensor-level source-camera attribution, and a high Peak-to-Correlation-Energy (PCE) between a questioned image and a camera reference fingerprint is routinely treated as strong evidence of common origin. The fingerprint-copy attack of Goljan, Fridrich and Chen (2011) shows that this signal can be forged: an adversary who estimates a target camera's fingerprint from that camera's publicly available images can inject a scaled copy of it into an unrelated photograph, producing a",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17761v1",
+      "title": "Inferring Sensitive Events in Multi-Mode Cyber-Physical Systems via Scheduling Side Channels",
+      "url": "https://arxiv.org/abs/2611.17761",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17761v1 Announce Type: new Abstract: Many cyber-physical systems (CPS) are multi-mode: they switch between operating modes with different tasksets and timing parameters in response to physical events or user activity. We show that these mode changes create a timing side channel: by altering the interference experienced by co-running tasks, they let an unprivileged co-resident observer infer sensitive events, such as a homeowner's arrival or a vehicle's route, from its own execution timing and, on multicore platforms, its core assignment. Existing schedule-based attacks and defenses ",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17818v1",
+      "title": "LLMs are Vulnerable to Malicious Requests with Indistinguishable Intent",
+      "url": "https://arxiv.org/abs/2611.17818",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17818v1 Announce Type: new Abstract: Jailbreak attacks can circumvent the safety mechanisms of Large Language Models (LLMs) and lead to the generation of harmful or policy-violating content. We first examine eight jailbreak methods against an LLM-based filter and observe that requests resembling normal user queries tend to have higher filter pass rates than those containing obvious anomalous patterns. This observation motivates the hypothesis that resemblance to normal requests may contribute to jailbreak success. We introduce \\textbf{Detail Guidance Attack (DGA)}, a framework that ",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17883v1",
+      "title": "Securing Multi-Agent Systems by Design",
+      "url": "https://arxiv.org/abs/2611.17883",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17883v1 Announce Type: new Abstract: Multi-agent systems solve complex tasks by decomposing them into subtasks, delegating the subtasks to agents, and aggregating the agents' responses using an aggregation rule. Malicious agents can manipulate the final solution by providing malicious responses to their assigned subtasks. In this paper, we first propose response manipulation attacks (ReMA), which iteratively optimize malicious responses to maximize attack effectiveness. Specifically, we formulate untargeted and targeted attacks as optimization problems and develop an approach to app",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17887v1",
+      "title": "RuralShield: Super Intelligence-Assisted Security Triage and Serverless Infrastructure for Resource-Constrained Healthcare",
+      "url": "https://arxiv.org/abs/2611.17887",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17887v1 Announce Type: new Abstract: Resource-constrained healthcare providers must connect cloud security controls to an operational response process. Introducing language-model assessments adds an authorization problem: a recommendation must be converted into a permitted action against a specific resource. RuralShield combines a configurable serverless application foundation with structured model assessment, deterministic routing, and human-approved containment. Its design separates workload access, assessment validation, and action authorization so that each boundary produces ins",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17907v1",
+      "title": "Game-Theoretic Analysis of RIS-Assisted Challenge-Response PLA - Part II: Partial Channel Knowledge",
+      "url": "https://arxiv.org/abs/2611.17907",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17907v1 Announce Type: new Abstract: We consider a physical layer authentication scenario in which a legitimate user (Alice) communicates with an authenticator (Bob) through a reconfigurable intelligent surface (RIS), controlled by Bob. An attacker (Trudy) aims to impersonate Alice by suitably precoding her messages and still transmitting them through the RIS. This two-part study analyzes this attack-defense interaction between Bob and Trudy under perfect (Part I) and partial (Part II) channel knowledge by all the agents. Part I formulates the joint RIS selection and precoder design",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17918v1",
+      "title": "Condensing Law of Security Information",
+      "url": "https://arxiv.org/abs/2611.17918",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17918v1 Announce Type: new Abstract: Scaling laws indicate that the generalization error of a large language model (LLM) decreases monotonically with model size once data is sufficient, and the corollary that larger models outperform smaller ones is now widely accepted. We argue that this corollary fails in security: decisions there hinge on anomalous inputs, which are long-tailed (e.g., zero-day attacks) and therefore poorly served by likelihood fitting. Worse still, the capability brought about by scale (e.g., inferring the intended whole from a corrupted part) leads a LLM silentl",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.18027v1",
+      "title": "Beyond Bot Labels: Retrospective Consequence-Grounded Ranking of Attributed Cache Harm in E-Commerce Logs",
+      "url": "https://arxiv.org/abs/2611.18027",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.18027v1 Announce Type: new Abstract: Web caches reduce origin load and latency, but automated traffic can either warm them or evict objects shoppers reuse, lowering the cache hit ratio (CHR). Existing bot defenses generally infer automation from User-Agent (UA) strings or behavior rather than identify sessions that impose cross-session cache harm. We instead formulate the task as ranking sessions by eviction damage and propose consequence-grounded session ranking. A single chronological replay attributes each eviction-induced miss by a protected shopping session (a victim) to the se",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.18126v1",
+      "title": "Hello Again: Exploiting Replay Protected Monotonic Counters to Brute-Force Windows Hello PINs",
+      "url": "https://arxiv.org/abs/2611.18126",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.18126v1 Announce Type: new Abstract: Windows Hello is the primary authentication mechanism on over one billion Windows 11 devices, supporting PINs as short as four digits. Such low-entropy PINs are viable only because the TPM's anti-hammering protection mitigates brute-force attacks. Most modern x86 platforms rely on firmware TPMs (fTPMs) that persist their non-volatile (NV) state, including the lockout state, to SPI flash. On newer platforms, rollback prevention of this state is delegated to the flash chip via Replay Protected Monotonic Counters (RPMCs), a JEDEC-standardized mechan",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.18133v1",
+      "title": "Forget the Lineage: Forward-Secure, Lineage-Complete Cryptographic Erasure for LLM-Agent Memory",
+      "url": "https://arxiv.org/abs/2611.18133",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.18133v1 Announce Type: new Abstract: Large language model (LLM) agents keep a long-term memory that the model itself writes: summaries, extracted facts and embeddings derived from what users said. Deleting a message is therefore not enough: its derivatives, storage residue and backups survive. We define lineage-complete forward-secure erasure: after a forget request, an adversary that later obtains all storage and the agent's current keys learns nothing about the forgotten input or any memory derived from it. We present LinEra, which encrypts each memory under a key derived from its",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.18272v1",
+      "title": "From Bytes to Behavior: Request-Level Attribution from Live GPU Hidden States",
+      "url": "https://arxiv.org/abs/2611.18272",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.18272v1 Announce Type: new Abstract: Existing memory forensics for machine learning systems typically targets static artifacts, such as model weights or prompt logs, rather than the transient computational states of a live inference process. This gap limits an examiner's ability to analyze the specific behavior of a running large language model (LLM) service that cannot be restarted or modified. We present a method for acquiring per-layer residual-stream activations from a live GPU process using a non-modifying debugger, without requiring prior knowledge of the model's architecture ",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.18293v1",
+      "title": "PrivacyPR: A Dataset of Real-World Privacy Fixes for Benchmarking Privacy-Aware Code Review",
+      "url": "https://arxiv.org/abs/2611.18293",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.18293v1 Announce Type: new Abstract: Coding agents increasingly review code, yet whether they catch the privacy defects that laws such as the GDPR require software to avoid remains largely untested, partly because few datasets connect real privacy defects to their accepted fixes and review context. We present PrivacyPR, a dataset of 4,131 merged GitHub pull requests (PRs) from 1,469 repositories, created between June 2018 and January 2024. Each PR includes its commits, diffs, review discussion, and LLM-generated labels for privacy relevance, fix type, and GDPR principles. PrivacyPR ",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.18312v1",
+      "title": "On the Same Track: Privacy Leaks in Electric Rail Transport via Magnetic Fields",
+      "url": "https://arxiv.org/abs/2611.18312",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.18312v1 Announce Type: new Abstract: Inertial sensors of smartphones are a well-known privacy risk, as they allow inferring sensitive user movements and activity without explicit permissions. Among these sensors, the magnetometer has received little attention, as it is assumed to measure mainly the Earth's magnetic field. In this paper, we show that electric trains generate distinctive magnetic fields that can be captured by a smartphone magnetometer. Apps deployed on the device can access these signals without user permission, enabling two novel attacks on passenger privacy: First,",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.18355v1",
+      "title": "Information-Theoretic Threshold Designated-Verifier Digital Signatures for Resource-Constrained Devices",
+      "url": "https://arxiv.org/abs/2611.18355",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.18355v1 Announce Type: new Abstract: Digital signatures are synonymous with data integrity and authenticity. Among applications such as e-commerce, software distribution, and instruction processing they play a vital role in the secure communication of data. Within this context and in preparation for quantum adversarial tactics we present three new information-theoretic threshold designated verifier digital signature schemes and prove them secure against \\textit{any} adversary under the standard security criterion. The $n$-of-$n$ multi-signature, $t$-of-$n$ threshold with dealer, and",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.18442v1",
+      "title": "CANTraj: Recovering Vehicle Trajectories from CAN Signals in Naturalistic Driving",
+      "url": "https://arxiv.org/abs/2611.18442",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.18442v1 Announce Type: new Abstract: Open driving releases and usage-based insurance programs often claim to prevent privacy breaches by omitting GPS records when sharing or collecting vehicle data. However, removing GPS coordinates from driving logs does not erase the location information carried by vehicle signals. While prior route-inference attacks have demonstrated that speed, steering, and driving events can be matched to road networks to reconstruct trajectories, existing studies rely on inconsistent prior assumptions and evaluation metrics and are tested only on small, restr",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.18449v1",
+      "title": "Deterministic ECDSA on secp256k1: the RFC 6979 assumption, a counterexample, and the state of deployed implementations",
+      "url": "https://arxiv.org/abs/2611.18449",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.18449v1 Announce Type: new Abstract: RFC 6979 derives the ECDSA nonce as $k = F_x(h)$, with $F_x$ HMAC_DRBG keyed by the signing key x. We isolate the assumption its security rests on, A*: at known public key $Q = xG$, the signing transcript under nonces $F_x()$ is indistinguishable from the transcript under uniform nonces. A* suffices, and it is neither PRF security of HMAC nor auxiliary-input PRF security (AI-PRF) of $F_x$. A function $F'(x, h) = P_{Ext(xG)}(h)$ is a PRF under standard assumptions yet leaks x from one signature; the same holds for unmodified RFC 6979 over a compre",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.18463v1",
+      "title": "VellSSLH: Sound Type-Guided Selective Speculative Load Hardening for LLVM IR",
+      "url": "https://arxiv.org/abs/2611.18463",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.18463v1 Announce Type: new Abstract: Constant-time cryptographic programs written in C can still leak secrets during speculative execution. Mispredicted branches may allow instructions to access secret data and expose it through observable behavior. Speculative load hardening (SLH) addresses these leaks, but protecting values unnecessarily can introduce significant runtime overhead. We present VellSSLH, which selectively inserts speculative load hardening at LLVM IR. Programmers specify Public and Secret inputs in annotated C programs, and our analysis infers which values may become",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17577v1",
+      "title": "Fair and Efficient Distributed EV Charging Coordination Using Threshold Cryptography and Machine Learning",
+      "url": "https://arxiv.org/abs/2611.17577",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17577v1 Announce Type: cross Abstract: Distributed coordination of electric vehicle (EV) charging with the alternating direction method of multipliers (ADMM) keeps EV constraints private but assumes that every participant follows the algorithm. This assumption fails in practice, where a biased operator or a man-in-the-middle (MITM) attacker can send inconsistent signals to different EVs, and compromised EVs can deviate from their prescribed updates. We first prove that attacks by such arbitrarily malicious, i.e., Byzantine, participants do not prevent convergence and therefore remai",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.17684v1",
+      "title": "Representational Geometry as a Diagnostic for Adversarial Robustness",
+      "url": "https://arxiv.org/abs/2611.17684",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.17684v1 Announce Type: cross Abstract: Adversarial training is a common technique for making neural networks more robust to small, intentionally crafted input perturbations, and robustness is commonly measured through accuracy under attack. By exploring inter-network representations across different adversarial training objectives, we can analyze whether multiple networks organize their latent representations similarly. We study Multilayer Perceptrons trained on MNIST under three adversarial training regimes and compare the resulting population training dynamics and geometry to thos",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.18055v1",
+      "title": "DeCompCert: A Verified Decompiler for CompCert-Generated AArch64",
+      "url": "https://arxiv.org/abs/2611.18055",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.18055v1 Announce Type: cross Abstract: DeCompCert is a Rocq-verified decompiler for AArch64 assembly generated by CompCert. It reconstructs CompCert C through nine reverse passes, combining deductively verified transformations with translation validation. Untrusted OCaml and Datalog analyses propose candidate reconstructions, while verified validators accept only candidates that satisfy the required semantic correspondence. The composed correctness theorem guarantees that every defined, safe behavior of an accepted C reconstruction is matched by the input CompCert assembly; under a ",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.18358v1",
+      "title": "Quadratic APN Functions of $\\mathbb{F}_2^{10}$ with a Self-Equivalence of Prime Order",
+      "url": "https://arxiv.org/abs/2611.18358",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.18358v1 Announce Type: cross Abstract: Almost perfect nonlinear (APN) functions of $\\mathbb{F}_2^n$ have the lowest possible differential uniformity. The only known APN permutation in even dimension, in dimension six, is equivalent to a quadratic APN function with a nontrivial linear self-equivalence; no APN permutation is known for even $n \\geq 8$. In a published collection of about 3.8 million quadratic APN classes of dimension eight, at most 0.34% have a nontrivial linear self-equivalence. In dimension ten, the 25 literature classes considered here all have one. We study all quad",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.18363v1",
+      "title": "Adaptable Watermarking: Transforming Image Watermarking Models via Lightweight Adapters",
+      "url": "https://arxiv.org/abs/2611.18363",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.18363v1 Announce Type: cross Abstract: We explore the adaptability of neural image watermarking models; the extent to which one watermarking method can be transformed into another through lightweight adaptation. We introduce a framework that enables encoder-decoder watermarking architectures to become modular and upgradable, supporting multiple watermarking styles without re-training full models. Adaptation is performed by attaching a compact parameter-efficient adapter and fine-tuning under a multi-domain residual alignment loss (spatial, gradient, and frequency) while preserving b",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.18563v1",
+      "title": "Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion",
+      "url": "https://arxiv.org/abs/2611.18563",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.18563v1 Announce Type: cross Abstract: Monitoring maritime activities is important for safety and security, particularly for detecting illegal activities, but remains challenging due to the size and complexity of the maritime domain. The Automatic Identification System (AIS) is commonly used for this purpose, despite its known vulnerabilities. In contrast, space-based radio frequency (RF) observations provide an independent source of vessel activity but lack ship identification and therefore cannot identify vessels on their own. Following the CRISP-DM process, this study applies a P",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2508.00910v3",
+      "title": "Cyber-Zero: Training Cybersecurity Agents without Runtime",
+      "url": "https://arxiv.org/abs/2508.00910",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2508.00910v3 Announce Type: replace Abstract: Large Language Models (LLMs) have achieved remarkable success in software engineering tasks when trained with executable runtime environments, particularly in resolving GitHub issues. However, such runtime environments are often unavailable in other domains, especially cybersecurity, where challenge configurations and execution contexts are ephemeral or restricted. We present Cyber-Zero, the first runtime-free framework for synthesizing high-quality agent trajectories to train cybersecurity LLMs. Cyber-Zero leverages publicly available CTF wr",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2510.12200v2",
+      "title": "HackWorld: Evaluating Computer-Use Agents on Exploiting Web Application Vulnerabilities",
+      "url": "https://arxiv.org/abs/2510.12200",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2510.12200v2 Announce Type: replace Abstract: Web applications are prime targets for cyberattacks as gateways to critical services and sensitive data. Traditional penetration testing is costly and expertise-intensive, making it difficult to scale with the growing web ecosystem. While language model agents show promise in cybersecurity, modern web applications demand visual understanding, dynamic content handling, and multi-step interactions that only computer-use agents (CUAs) can perform. Yet, their ability to discover and exploit vulnerabilities through graphical interfaces remains lar",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2610.02805v2",
+      "title": "From TS-SUF-2 to TS-SUF-4: Practical Security Enhancements for FROST2 Threshold Signatures",
+      "url": "https://arxiv.org/abs/2610.02805",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2610.02805v2 Announce Type: replace Abstract: Threshold signature schemes play a vital role in securing digital assets within blockchain and distributed systems. FROST2 stands out as a practical threshold Schnorr signature scheme, noted for its efficiency and compatibility with standard verification processes. However, under the one-more discrete logarithm assumption, with static corruption and centralized key generation settings, FROST2 has been shown by Bellare et al. (in CRYPTO 2022) to achieve only TS-SUF-2 security, which is a consequence of its vulnerability to TS-UF-3 attacks. In ",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2610.36145v2",
+      "title": "They Will See Johnny's Message: A Measurement Study of Post-Quantum Cryptography Across Email Delivery Paths",
+      "url": "https://arxiv.org/abs/2610.36145",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2610.36145v2 Announce Type: replace Abstract: Harvest-now, decrypt-later (HNDL) attacks make the transition to post-quantum cryptography (PQC) urgent for email. This paper presents a systematic measurement that jointly examines PQC deployment across email service stages, negotiation by communicating peers, and usable message encryption. Endpoint-level support alone does not establish PQC readiness across email workflows because submission, relay, and access use independently negotiated Transport Layer Security (TLS) connections. We therefore combine three snapshots of relay, submission, ",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.04240v2",
+      "title": "VerfGraph: Efficient Zero-Knowledge Verifiable Graph Query Evaluation System",
+      "url": "https://arxiv.org/abs/2611.04240",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.04240v2 Announce Type: replace Abstract: Graph databases are widely used to manage relationship-rich data and support multi-hop traversal and shortest-path queries in applications such as financial risk control and social networks. When a client issues such queries to a database owner, the returned result may be incorrect. However, the client cannot directly verify it because the graph is typically large and private, making re-executing the query both infeasible and insecure. Verifiable and confidential graph query evaluation thus plays an important role in such applications. We pre",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.16128v2",
+      "title": "CoordX Types: A Trustless, Swappable Type System for Shared Records",
+      "url": "https://arxiv.org/abs/2611.16128",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.16128v2 Announce Type: replace Abstract: The CoordX Protocol carries signed and encrypted entries between parties. It proves who wrote each entry and who had permission to write it. It does not say what an entry means. That task belongs above the protocol layer. This paper describes the CoordX type system, the layer that gives entries a meaning. A type is a short document that says how to read one part of a shared record: which entries count, what each position means, what a party may do there, and what a party must do next. The type system has two key properties. It is trustless: a",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2508.18370v3",
+      "title": "Training Language Model Agents to Find Vulnerabilities with CTF-Dojo",
+      "url": "https://arxiv.org/abs/2508.18370",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2508.18370v3 Announce Type: replace-cross Abstract: Large language models (LLMs) have demonstrated exceptional capabilities when trained within executable runtime environments, notably excelling at software engineering tasks through verified feedback loops. Yet, scalable and generalizable execution-grounded environments remain scarce, limiting progress in training more capable ML agents. We introduce CTF-Dojo, the first large-scale executable runtime tailored for training LLMs with verifiable feedback, featuring 658 fully functional Capture-The-Flag (CTF)-style challenges containerized i",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2510.10140v3",
+      "title": "Adversarial Attacks on Downstream Weather Forecasting Models: Application to Tropical Cyclone Trajectory Prediction",
+      "url": "https://arxiv.org/abs/2510.10140",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2510.10140v3 Announce Type: replace-cross Abstract: Deep learning-based weather forecasting (DLWF) models leverage past weather observations to generate future forecasts, supporting a wide range of downstream applications, including tropical cyclone (TC) prediction. In this paper, we investigate the vulnerability of these models to adversarial attacks, where subtle perturbations to upstream forecasts can alter downstream TC trajectory predictions. Crafting perturbed inputs to steer downstream outputs toward attacker-specified trajectories is a challenging problem for several reasons. Fir",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2603.10099v2",
+      "title": "Denoising the US Census: Succinct Block Hierarchical Regression",
+      "url": "https://arxiv.org/abs/2603.10099",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2603.10099v2 Announce Type: replace-cross Abstract: The 2020 United States Census adopted differential privacy to protect individual confidentiality, adding calibrated noise to summary demographic measurements that are then reconciled into population tables. We developed BlueDown, a postprocessing algorithm that combines techniques from linear regression and constrained optimization while exploiting measurement structure for efficiency. On 2020 Census data, BlueDown reduced the error of groupings by race at the county level by 21-36% and of all county-level groupings by 9-58%; at the tra",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2607.07738v3",
+      "title": "REFORGE: A Method for Benchmarking LLMs' Reverse Engineering Capabilities in Decompiled Binary Function Naming",
+      "url": "https://arxiv.org/abs/2607.07738",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2607.07738v3 Announce Type: replace-cross Abstract: Large language models (LLMs) are increasingly applied to reverse-engineering tasks, and recent threat-intelligence reporting shows them operating inside live offensive-security workflows. Claims about their capability, however, outpace our ability to measure it. Existing benchmarks for LLM-assisted binary analysis treat the construction of function-level ground truth as a solved pre-processing step and report accuracy without disclosing how many functions were reliably evaluable. We argue that the principal obstacle to fair evaluation i",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2610.13357v4",
+      "title": "ECGGuard: Deep Watermarking of Electrocardiogram Signals With Error-Correcting",
+      "url": "https://arxiv.org/abs/2610.13357",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2610.13357v4 Announce Type: replace-cross Abstract: Wearable electrocardiogram (ECG) recordings pass through multiple networks and systems before automated interpretation, leaving patient metadata vulnerable to loss. Digital watermarking can embed this metadata in the signal, but conventional methods fail under time shifts, and high waveform similarity does not guarantee the same downstream diagnosis. We present \\rev{ECGGuard}, a deep watermarking framework for single-lead ECG. A fully convolutional generator embeds the payload without signal quantization, a detector decodes the message ",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.08442v2",
+      "title": "SoK: Assessing Post-Quantum Cryptography Adoption in Software Development: Standards, Lifecycle Coverage, Deployment Maturity, and Evidence of Readiness",
+      "url": "https://arxiv.org/abs/2611.08442",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.08442v2 Announce Type: replace-cross Abstract: Standardised post-quantum cryptography (PQC) is critical for protecting software systems against future quantum threats, but standardised algorithms alone do not provide a pathway for their secure integration into software. This paper presents a Systematisation of Knowledge (SoK) of PQC integration in software development, synthesising existing approaches across implementation, migration, and developer education. We analyse these approaches against NIST PQC standards and PQC migration guidance, software development lifecycle coverage, c",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "oai:arXiv.org:2611.08752v2",
+      "title": "AttentionSwitch: Jailbreak Defense for LLMs via Joint Learning of Sparse Attention-Head Selection and Scaling",
+      "url": "https://arxiv.org/abs/2611.08752",
+      "published": "2026-11-16T05:00:00+00:00",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2611.08752v2 Announce Type: replace-cross Abstract: Large language models have achieved remarkable performance across a wide range of tasks, yet they remain susceptible to jailbreak attacks that circumvent safety mechanisms and elicit harmful or unintended outputs. Although safety can be improved through model fine-tuning, such approaches can be computationally expensive and may degrade previously acquired capabilities through catastrophic forgetting. Recent jailbreak defenses have therefore explored targeted interventions on specific model components associated with unsafe behavior. How",
+      "candidate_patterns": [
+        "curiosity-past-the-fence",
+        "craft-and-peer-recognition"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+      "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+      "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+      "published": "2026-11-16T12:34:21+00:00",
+      "source": "The Hacker News",
+      "summary": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week. No patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws. Government cybersecurity agencies in Belgium, Ireland and Germany told operators this week to",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+      "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+      "url": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+      "published": "2026-11-16T12:33:18+00:00",
+      "source": "The Hacker News",
+      "summary": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\" Kaspersky said in an analysis published today. \"The '7z.dll' file was a patched version of the",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+      "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+      "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+      "published": "2026-11-16T09:32:57+00:00",
+      "source": "The Hacker News",
+      "summary": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives commands over the TOR anonymity network to manage CPU and GPU miners. The activity was observed in",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+      "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
+      "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+      "published": "2026-11-16T07:34:21+00:00",
+      "source": "The Hacker News",
+      "summary": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen keys being used to run the AI models that powered the search for more keys. The team said this",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+      "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
+      "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+      "published": "2026-11-16T06:53:34+00:00",
+      "source": "The Hacker News",
+      "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has been attributed to a threat actor named BO Team (aka Black Owl, Hoody Hyena,",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+      "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+      "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+      "published": "2026-11-15T11:27:31+00:00",
+      "source": "The Hacker News",
+      "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and related metadata without their explicit consent. The company has 60 days to",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+      "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+      "published": "2026-11-15T08:22:04+00:00",
+      "source": "The Hacker News",
+      "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+      "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+      "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+      "published": "2026-11-14T12:38:35+00:00",
+      "source": "The Hacker News",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability, tracked as CVE-2026-114713 (CVSS score: 8.6), is a case of improper neutralization of delimiters",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+      "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+      "published": "2026-11-13T16:53:08+00:00",
+      "source": "The Hacker News",
+      "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code run this way has the rights of the operating",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+      "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+      "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+      "published": "2026-11-13T15:27:05+00:00",
+      "source": "The Hacker News",
+      "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+      "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+      "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+      "published": "2026-11-13T14:28:58+00:00",
+      "source": "The Hacker News",
+      "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a coordinated set of actions announced by the U.S. government, the cloud-based",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+      "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
+      "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+      "published": "2026-11-13T13:54:20+00:00",
+      "source": "The Hacker News",
+      "summary": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the attackers. The company examined one of the wallets in its lab, identified the other",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
+      "title": "When an AI Agent Goes Wrong, Can You Stop It?",
+      "url": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
+      "published": "2026-11-13T11:52:31+00:00",
+      "source": "The Hacker News",
+      "summary": "Suppose an AI agent is asked to sort support tickets and look up account details. A ticket contains instructions that lead the agent to export records to an unfamiliar destination. The agent can make the request because its identity has access to the records and its connected tools allow the action. That kind of scenario raises a response question: what does “stop the agent” actually mean? A",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
+      "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
+      "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
+      "published": "2026-11-13T11:10:40+00:00",
+      "source": "The Hacker News",
+      "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir this week. It assessed with high confidence that SilentAir is a state-level actor,",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
+      "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
+      "url": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
+      "published": "2026-11-13T10:55:03+00:00",
+      "source": "The Hacker News",
+      "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than 40,000 victims, according to Germany's Federal Criminal Police Office (BKA). Gootloader is a loader:",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
+      "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
+      "published": "2026-11-13T08:05:49+00:00",
+      "source": "The Hacker News",
+      "summary": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS to deploy a backdoor called TSGA. The activity, detailed by Check Point, began on October 30, 2026, and targeted Israeli organizations, with a broader follow-up",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
+      "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
+      "published": "2026-11-13T05:43:28+00:00",
+      "source": "The Hacker News",
+      "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some functionality, but we believe taking additional precautions while remediation is completed is the",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
+      "title": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
+      "url": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
+      "published": "2026-11-12T18:07:15+00:00",
+      "source": "The Hacker News",
+      "summary": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access? A suspicious login might belong to an employee. An unusual API call could come from a machine account. Or an AI agent might be accessing sensitive systems using permissions nobody",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
+      "title": "ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories",
+      "url": "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
+      "published": "2026-11-12T18:02:51+00:00",
+      "source": "The Hacker News",
+      "summary": "A search result isn't always safe. An access request isn't always harmless. And a familiar account doesn't always mean a familiar person is using it. Simple things to remember. Yet a surprising amount of this week's trouble starts right there. Attackers are using fake websites, stolen access, and trusted tools to get into places they shouldn't be. AI is helping them build attacks faster, while",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
+      "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
+      "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
+      "published": "2026-11-12T17:50:27+00:00",
+      "source": "The Hacker News",
+      "summary": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver. The proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year. It abuses how clfs.sys creates companion files when a privileged process opens a prepared log, using path redirection to take control of",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
+      "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
+      "url": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
+      "published": "2026-11-12T16:27:01+00:00",
+      "source": "The Hacker News",
+      "summary": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. Quay enables anonymous access by default, and while it is enabled, the attacker needs no account. When it is off, anyone with a valid account can still exploit the flaw, Red Hat said yesterday. The company has released fixed builds for eight Quay",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
+      "title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
+      "url": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
+      "published": "2026-11-12T15:38:49+00:00",
+      "source": "The Hacker News",
+      "summary": "Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass. The critical vulnerabilities that impact NetScaler ADC and NetScaler Gateway are listed below - CVE-2026-120868 (CVSS score: 9.3) - A memory overflow vulnerability in Packet",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html",
+      "title": "186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers",
+      "url": "https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html",
+      "published": "2026-11-12T15:15:40+00:00",
+      "source": "The Hacker News",
+      "summary": "Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix-style lures, browser-hijacking malware, and a set of extensions that hijack user searches. This delivery pattern has been codenamed TypoPrompting by Island. \"AI-app lookalikes that turn an attempt to reach a familiar tool into a prompt to verify,",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
+      "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
+      "url": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
+      "published": "2026-11-12T13:08:28+00:00",
+      "source": "The Hacker News",
+      "summary": "The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and not a new vulnerability, it has emerged. Blackpoint Cyber's Adversary Pursuit Group (APG), which shared the details with The Hacker News, said the recovered attacker toolkit exploits CVE-2026-84869 (CVSS score: 9.9), an",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
+      "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
+      "url": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
+      "published": "2026-11-12T12:09:14+00:00",
+      "source": "The Hacker News",
+      "summary": "Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week. The company has already applied mitigations against attacks between VMs, and between VMs and the host. Inside a VM, the flaws may let an attacker with code on the same processor core infer data from other processes or the kernel. The affected",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html",
+      "title": "New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access",
+      "url": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html",
+      "published": "2026-11-12T11:51:43+00:00",
+      "source": "The Hacker News",
+      "summary": "N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2. \"Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy API is turned on and exposed to the public internet,\" N-able said in a new advisory. \"Legacy API is",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html",
+      "title": "Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign",
+      "url": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html",
+      "published": "2026-11-12T11:51:31+00:00",
+      "source": "The Hacker News",
+      "summary": "Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back clean, and the operator designed it that way on purpose. The Threat Research team at Material Security spotted the campaign and has since taken down hundreds of attacker domains in an effort the team calls Operation CloudFire.",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
+      "title": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
+      "url": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
+      "published": "2026-11-12T11:33:15+00:00",
+      "source": "The Hacker News",
+      "summary": "PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0. It has been described as a case of improper input validation and deserialization of untrusted data that could result in",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+      "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
+      "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+      "published": "2026-11-12T09:25:00+00:00",
+      "source": "The Hacker News",
+      "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes. MongoDB, the company that makes the database, released fixed versions earlier this week. The affected servers are members of a replica",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
+      "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
+      "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
+      "published": "2026-11-12T08:20:37+00:00",
+      "source": "The Hacker News",
+      "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed versions were released for all three supported lines: 22.23.5, 24.22.3, and 26.13.1. The crash",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+      "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
+      "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+      "published": "2026-11-12T06:42:47+00:00",
+      "source": "The Hacker News",
+      "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach. It ran in at least 1,806 repositories, where the attacker has likely collected",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+      "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+      "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+      "published": "2026-11-12T05:12:26+00:00",
+      "source": "The Hacker News",
+      "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux. An attacker who can reach the",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
+      "title": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients",
+      "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
+      "published": "2026-11-12T04:39:48+00:00",
+      "source": "The Hacker News",
+      "summary": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access. In an advisory posted on its site, the company said there is no evidence that the incident involves a compromise of its infrastructure or a vulnerability in the ScreenConnect software. \"Our initial assessment suggests the activity may involve",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+      "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
+      "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+      "published": "2026-11-11T16:12:46+00:00",
+      "source": "The Hacker News",
+      "summary": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems. The vulnerabilities are listed below - CVE-2026-108186 (CVSS score: 9.6) - An improper input validation vulnerability that could allow an unauthenticated user to conduct an escalation of privilege via",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+      "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+      "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+      "published": "2026-11-11T15:34:27+00:00",
+      "source": "The Hacker News",
+      "summary": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments. \"In several recently observed intrusions, Alibaba Cloud systems hosting AntiFox interfaces were associated with confirmed malicious actions against",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+      "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
+      "url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+      "published": "2026-11-11T14:01:00+00:00",
+      "source": "The Hacker News",
+      "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026. Cynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers within a narrow window of just over three minutes. The activity has been found to share some",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
+      "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
+      "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
+      "published": "2026-11-11T12:19:40+00:00",
+      "source": "The Hacker News",
+      "summary": "Of the 37,571 Grok-built apps that security company Claroc found online, 35,578 were open to anyone without a sign-in, the researchers said yesterday. They included 24 apps built by staff at the social network X and at SpaceXSI, the company that makes the Grok AI assistant. Most of the open apps were games, landing pages, and calculators, but about 1 in 10 contained internal business or",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
+      "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
+      "url": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
+      "published": "2026-11-11T12:01:59+00:00",
+      "source": "The Hacker News",
+      "summary": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from any human’s. That was true for us at Token as well. Then, we built an agent that broke all three by default. This helped us think through how such agents should be defended. When a browser agent acts inside a user’s authenticated",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
+      "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
+      "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
+      "published": "2026-11-11T12:00:53+00:00",
+      "source": "The Hacker News",
+      "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys. Each intermediate CA has its own private key, which the company uses to sign the certificates it issues. The 8 intermediate CAs compromised in October had a different problem: a single line in the script",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
+      "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
+      "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
+      "published": "2026-11-11T08:17:53+00:00",
+      "source": "The Hacker News",
+      "summary": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws. These cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools, 59 in SQL Server, 53 in Developer Tools, and 27 in SharePoint Server. The patches also include 165 non-Microsoft-issued CVE identifiers.",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
+      "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
+      "url": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
+      "published": "2026-11-11T07:49:04+00:00",
+      "source": "The Hacker News",
+      "summary": "AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday. It has promised to pay those charges itself when an AI provider will not refund them. The company builds and runs apps for its customers and stores their secrets, such as API keys and database",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
+      "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
+      "url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
+      "published": "2026-11-11T07:21:05+00:00",
+      "source": "The Hacker News",
+      "summary": "An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown. When a chosen trigger appears, the model outputs an attacker's command, which an agent using that model would run with the agent's own permissions. The attacker must be able to change the model's weights. The team tested the method on",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+      "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+      "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+      "published": "2026-11-11T06:04:02+00:00",
+      "source": "The Hacker News",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Details of the vulnerabilities are below - CVE-2026-20320 (CVSS score: 7.5) - An improper restriction of XML external entity",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+      "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
+      "url": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+      "published": "2026-11-10T19:23:10+00:00",
+      "source": "The Hacker News",
+      "summary": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1 and 2.55.1. The flaw, tracked as CVE-2026-111760, is an integer truncation in how Git handles its index. An",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+      "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
+      "url": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+      "published": "2026-11-10T19:19:39+00:00",
+      "source": "The Hacker News",
+      "summary": "An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday. The attacker could also have seen requests being processed on that server that day, including requests sent in confidential mode, the company said earlier this week. That mode processes requests inside a trusted execution environment (TEE",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+      "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+      "published": "2026-11-10T18:12:21+00:00",
+      "source": "The Hacker News",
+      "summary": "French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild. The authentication bypass flaw, which does not yet have a CVE identifier, is tracked as VSA-2026-062. \"REST cookie parsing turns authenticationToken=j:%7B%7D into {},\" Vates VMS said in an alert. \"REST authentication passes that object to the",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
+      "title": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
+      "url": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
+      "published": "2026-11-10T17:43:23+00:00",
+      "source": "The Hacker News",
+      "summary": "Three distinct threat activity clusters with shared infrastructure and malware code similarities have been observed targeting telecommunications providers, government organizations, military entities, research institutions, and critical infrastructure across Latin America, Asia, and Europe over the past year. Check Point Research is tracking the clusters under the names SilentDelivery,",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
+      "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
+      "url": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
+      "published": "2026-11-10T16:00:55+00:00",
+      "source": "The Hacker News",
+      "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication and execute arbitrary commands on affected systems. Patches for the two",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
+      "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
+      "url": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
+      "published": "2026-11-10T15:58:44+00:00",
+      "source": "The Hacker News",
+      "summary": "The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing lures to deliver a remote access trojan (RAT) that shares its lineage with AsyncRAT and DCRat. \"The campaign uses Portuguese and Spanish lures that resemble court notifications, fiscalía notices, tutela proceedings, and",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+      "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
+      "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+      "published": "2026-11-10T15:33:59+00:00",
+      "source": "The Hacker News",
+      "summary": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a \"limited set of accounts.\" In a notice published on October 10, 2026, the company said it detected unauthorized use of internal Fireworks",
+      "candidate_patterns": [
+        "status-in-transgressive-subculture",
+        "boredom-with-asymmetric-leverage",
+        "ideology-faith-nation"
+      ]
+    },
+    {
+      "id": "https://isc.sans.edu/diary/rss/33522",
+      "title": "Scans for LiteLLM/Starlette (CVE-2026-42271, CVE-2026-48710), (Mon, Nov 16th)",
+      "url": "https://isc.sans.edu/diary/rss/33522",
+      "published": "2026-11-16T13:11:04+00:00",
+      "source": "SANS Internet Storm Center",
+      "summary": "This weekend, we started seeing requests for /mcp-rest/test/tools/list hitting our honeypots. These requests appear to attempt to exploit CVE-2026-42271 and CVE-2026-48710. Horizon3.ai published a short write-up about how these vulnerabilities can be chained to achieve remote code execution without authentication [Horizon3]",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage",
+        "status-in-transgressive-subculture"
+      ]
+    },
+    {
+      "id": "https://isc.sans.edu/diary/rss/33520",
+      "title": "ISC Stormcast For Monday, November 16th, 2026 https://isc.sans.edu/podcastdetail/10180, (Mon, Nov 16th)",
+      "url": "https://isc.sans.edu/diary/rss/33520",
+      "published": "2026-11-16T02:00:05+00:00",
+      "source": "SANS Internet Storm Center",
+      "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage",
+        "status-in-transgressive-subculture"
+      ]
+    },
+    {
+      "id": "https://isc.sans.edu/diary/rss/33496",
+      "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
+      "url": "https://isc.sans.edu/diary/rss/33496",
+      "published": "2026-11-15T18:17:27+00:00",
+      "source": "SANS Internet Storm Center",
+      "summary": "YARA-X&#x26;#39&#x26;#x3b;s 1.23.0 release brings 4 improvements and 16 bugfixes.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage",
+        "status-in-transgressive-subculture"
+      ]
+    },
+    {
+      "id": "https://isc.sans.edu/diary/rss/33518",
+      "title": "Macfinger ClickFix campaign sends DownTheDRAIN infostealer for macOS, (Fri, Nov 13th)",
+      "url": "https://isc.sans.edu/diary/rss/33518",
+      "published": "2026-11-13T03:41:41+00:00",
+      "source": "SANS Internet Storm Center",
+      "summary": "Introduction",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage",
+        "status-in-transgressive-subculture"
+      ]
+    },
+    {
+      "id": "https://isc.sans.edu/diary/rss/33516",
+      "title": "ISC Stormcast For Friday, November 13th, 2026 https://isc.sans.edu/podcastdetail/10178, (Fri, Nov 13th)",
+      "url": "https://isc.sans.edu/diary/rss/33516",
+      "published": "2026-11-13T02:00:03+00:00",
+      "source": "SANS Internet Storm Center",
+      "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage",
+        "status-in-transgressive-subculture"
+      ]
+    },
+    {
+      "id": "https://isc.sans.edu/diary/rss/33514",
+      "title": "Exploit Attempts for GPUStack Authentication Bypass (CVE-2026-102895), (Thu, Nov 12th)",
+      "url": "https://isc.sans.edu/diary/rss/33514",
+      "published": "2026-11-12T11:56:24+00:00",
+      "source": "SANS Internet Storm Center",
+      "summary": "CVE-2026-102895 is a trivial authentication-bypass vulnerability. GPUStack is also an attractive target. It is open-source software that manages clusters of GPUs, which are typically used to run AI workloads. All versions of GPUStack prior to 2.2.0, which was released at the end of June. This vulnerability was not made public until the end of July, and the CVE was assigned on November 4th.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage",
+        "status-in-transgressive-subculture"
+      ]
+    },
+    {
+      "id": "https://isc.sans.edu/diary/rss/33512",
+      "title": "ISC Stormcast For Thursday, November 12th, 2026 https://isc.sans.edu/podcastdetail/10176, (Thu, Nov 12th)",
+      "url": "https://isc.sans.edu/diary/rss/33512",
+      "published": "2026-11-12T02:00:03+00:00",
+      "source": "SANS Internet Storm Center",
+      "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage",
+        "status-in-transgressive-subculture"
+      ]
+    },
+    {
+      "id": "https://isc.sans.edu/diary/rss/33508",
+      "title": "Microsoft Patch Tuesday November 2026, (Tue, Nov 10th)",
+      "url": "https://isc.sans.edu/diary/rss/33508",
+      "published": "2026-11-11T18:28:43+00:00",
+      "source": "SANS Internet Storm Center",
+      "summary": "Microsoft continues its AI-induced patch surge, addressing 1,260 different vulnerabilities this month. 68 of these vulnerabilities are considered critical. 167 of the vulnerabilities are Chromium issues affecting Microsoft Edge.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage",
+        "status-in-transgressive-subculture"
+      ]
+    },
+    {
+      "id": "https://isc.sans.edu/diary/rss/33510",
+      "title": "ISC Stormcast For Wednesday, November 11th, 2026 https://isc.sans.edu/podcastdetail/10174, (Wed, Nov 11th)",
+      "url": "https://isc.sans.edu/diary/rss/33510",
+      "published": "2026-11-11T02:00:03+00:00",
+      "source": "SANS Internet Storm Center",
+      "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage",
+        "status-in-transgressive-subculture"
+      ]
+    },
+    {
+      "id": "https://isc.sans.edu/diary/rss/33506",
+      "title": "Apple Patches Everyting: November 2026 Edition, (Tue, Nov 10th)",
+      "url": "https://isc.sans.edu/diary/rss/33506",
+      "published": "2026-11-10T12:48:55+00:00",
+      "source": "SANS Internet Storm Center",
+      "summary": "",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage",
+        "status-in-transgressive-subculture"
+      ]
+    },
+    {
+      "id": "https://openssf.org/?p=12155",
+      "title": "The AI Security Gap Hiding in Routine Maintenance",
+      "url": "https://openssf.org/blog/2026/11/09/the-ai-security-gap-hiding-in-routine-maintenance/",
+      "published": "2026-11-09T17:42:25+00:00",
+      "source": "OpenSSF Blog",
+      "summary": "AI coding tools are speeding up software development and adding external dependencies faster than teams can review them. Discover why routine maintenance and component updates have become the hidden security gap for organizations today.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "https://openssf.org/?p=12150",
+      "title": "OpenSSF Welcomes New Members and Expands AI Security Resources",
+      "url": "https://openssf.org/press-release/2026/11/09/openssf-welcomes-new-members-and-expands-ai-security-resources/",
+      "published": "2026-11-09T15:00:08+00:00",
+      "source": "OpenSSF Blog",
+      "summary": "The OpenSSF announced expanded membership at Open Source SecurityCon North America and broadened its AI security resources, including a new guide to finding and fixing vulnerabilities using AI.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "https://openssf.org/?p=12033",
+      "title": "Announcing Zarf 1.0: Security and Stability for Airgap Software Delivery",
+      "url": "https://openssf.org/blog/2026/11/09/announcing-zarf-1-0-security-and-stability-for-airgap-software-delivery/",
+      "published": "2026-11-09T14:01:14+00:00",
+      "source": "OpenSSF Blog",
+      "summary": "Zarf 1.0 is here, bringing the v1beta1 schema, stronger package signing, and improved stability for air-gapped and constrained software delivery environments.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "https://openssf.org/?p=12133",
+      "title": "OpenSSF Community Day Europe 2026: Driving Systemic Security and Operational Resilience in Open Source",
+      "url": "https://openssf.org/blog/2026/11/06/openssf-community-day-europe-2026-driving-systemic-security-and-operational-resilience-in-open-source/",
+      "published": "2026-11-06T21:40:15+00:00",
+      "source": "OpenSSF Blog",
+      "summary": "At OpenSSF Community Day Europe 2026 in Prague, more than 200 attendees gathered onsite as practitioners, maintainers, policymakers, and security leaders came together across two distinct tracks: the Main Track (South Hall 3B) focusing on core community strategy, policy, and tooling, and the dedicated SCORED Track (South Hall 3A) highlighting academic research and technical supply chain studies.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "https://openssf.org/?p=12105",
+      "title": "From Sigstore to CRA readiness: Sylva’s journey with OpenSSF",
+      "url": "https://openssf.org/blog/2026/11/06/from-sigstore-to-cra-readiness-sylvas-journey-with-openssf/",
+      "published": "2026-11-06T14:44:01+00:00",
+      "source": "OpenSSF Blog",
+      "summary": "Sylva’s security work relies heavily on the OpenSSF ecosystem. From supply chain tooling with Sigstore and SLSA to adopting OpenSSF Scorecard and Best Practices badges, learn how Sylva is approaching EU Cyber Resilience Act (CRA) readiness and building verifiable trust for downstream operators.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "https://openssf.org/?p=12089",
+      "title": "Case Study: Kubescape Completes All Six Security Slam Badges with OpenSSF",
+      "url": "https://openssf.org/blog/2026/11/05/case-study-kubescape-completes-all-six-security-slam-badges-with-openssf/",
+      "published": "2026-11-05T19:02:30+00:00",
+      "source": "OpenSSF Blog",
+      "summary": "Kubescape completed all six project-level badges in the Fall 2026 Security Slam, bringing maintainers and community contributors together to strengthen security across its open source Kubernetes platform. Learn how 150+ hours of community contribution helped achieve OSPS Baseline Level Two status and harden 12+ repositories.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "https://openssf.org/?p=12074",
+      "title": "The PHP Security Wake-Up Call: Fixes Are Only the Beginning",
+      "url": "https://openssf.org/blog/2026/11/03/the-php-security-wake-up-call-fixes-are-only-the-beginning/",
+      "published": "2026-11-03T19:21:35+00:00",
+      "source": "OpenSSF Blog",
+      "summary": "",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "https://openssf.org/?p=12069",
+      "title": "What’s in the SOSS? Podcast #77 – S3E29 Baking Security into the Toolchain: Accurate Swift SBOMs with Apple’s Ev Cheng and Sam Khouri",
+      "url": "https://openssf.org/podcast/2026/11/03/whats-in-the-soss-podcast-77-s3e29-baking-security-into-the-toolchain-accurate-swift-sboms-with-apples-ev-cheng-and-sam-khouri/",
+      "published": "2026-11-03T14:49:26+00:00",
+      "source": "OpenSSF Blog",
+      "summary": "In this episode of What's in the SOSS, Apple engineers Ev Cheng and Sam Khouri discuss the evolution of Software Bill of Materials (SBOMs) and how native build-graph awareness in Swift ensures accurate, build-time precision.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "https://openssf.org/?p=12045",
+      "title": "OpenSSF Newsletter – October 2026",
+      "url": "https://openssf.org/newsletter/2026/10/30/openssf-newsletter-october-2026/",
+      "published": "2026-10-30T19:52:38+00:00",
+      "source": "OpenSSF Blog",
+      "summary": "October brought four new members and fresh CRA resources from Prague, a practical guide to finding and fixing vulnerabilities with AI, and a new Sandbox project. Next stop: Salt Lake City for Open Source SecurityCon on November 9.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage"
+      ]
+    },
+    {
+      "id": "https://openssf.org/?p=12036",
+      "title": "New LF Research Survey Shows Generative AI Cuts Open Source Coding Time in Half, but 25% of Incoming Pull Requests are Considered AI Slop",
+      "url": "https://openssf.org/press-release/2026/10/30/new-lf-research-survey-shows-generative-ai-cuts-open-source-coding-time-in-half-but-25-of-incoming-pull-requests-are-considered-ai-slop/",
+      "published": "2026-10-30T18:48:15+00:00",
+      "source": "OpenSSF Blog",
+      "summary": "While Generative AI boosts developer productivity and lowers barriers to entry, a new Linux Foundation Research report reveals it also increases maintainer workloads. With 25% of incoming pull requests now considered \"AI slop,\" the findings highlight an urgent need for stronger open source project governance.",
+      "candidate_patterns": [
+        "boredom-with-asymmetric-leverage"
+      ]
+    }
+  ]
+}
